@@ -6,26 +6,27 @@
       <v-container class="contenedor  text-xs-center" pa-2>
 
         <v-layout   class=" justify-space-between row wrap  align-center">
-          <v-flex xs12 sm6 md4 pb-0>
-         <VueHotelDatepicker class=" indigo--text"  placeholder="fecha inicio / fecha final" />
+         <v-flex xs12 sm6 md4 pb-0>
+         <VueHotelDatepicker class=" white--text"  placeholder="Fecha Inicio / Fecha Final" />
+          </v-flex>
+          
+          <v-flex xs12 sm6 md2>
+            <v-select :items="itemsnumeroadultos"  color="white" label="Numero de adultos"></v-select>
           </v-flex>
           <v-flex xs12 sm6 md2>
-            <v-select :items="itemsnumeroadultos"  color="reservaConfirm" label="Numero de adultos"></v-select>
+              <v-select :items="itemsnumeroniños" color="white" label="Numero de niños"></v-select>
           </v-flex>
           <v-flex xs12 sm6 md2>
-              <v-select :items="itemsnumeroniños" color="red" label="Numero de niños"></v-select>
-          </v-flex>
-          <v-flex xs12 sm6 md2>
-            <v-btn round color="red" @click="e1 = 0, dialogConfirmar = false , reservaConfirm = true" ><v-icon color="black">search</v-icon></v-btn>
+            <v-btn round color="blue" @click="e1 = 0, dialogConfirmar = false , reservaConfirm = true" ><v-icon color="black">search</v-icon></v-btn>
           </v-flex>
         </v-layout>
-        <v-layout color="green"  class="align-center justify-start row align-center">
+        <v-layout color="red"  class="align-center justify-start row align-center">
           <v-flex xs12 sm6 md6>
             <v-radio-group v-model="acomodacion" row>
-              <v-radio color="red" label="individual" value="radio-1"></v-radio>
-              <v-radio color="red" label="doble" value="radio-2"></v-radio>
-              <v-radio color="blue" label="suite" value="radio-3"></v-radio>
-              <v-radio color="red" label="matrimonial" value="radio-4"></v-radio>
+              <v-radio color="red" label="Individual" value="radio-1"></v-radio>
+              <v-radio color="red" label="Doble" value="radio-2"></v-radio>
+              <v-radio color="red" label="Suite" value="radio-3"></v-radio>
+              <v-radio color="red" label="Matrimonial" value="radio-4"></v-radio>
             </v-radio-group>
           </v-flex>
         </v-layout>
@@ -37,9 +38,9 @@
 
       <v-layout row >
         <v-flex xs12 >
-          <v-card dark tile flat color="green" >
+          <v-card dark tile flat color="#0bb5a4" >
 
-              <h3 class="letra2 text-md-center indigo--text  "  >La mejor opcion para ti y tu familia</h3>
+              <h3 class="letra2 text-md-center indigo--text  "  >La Mejor Opcion Para Ti y Tu familia</h3>
              <v-container>
               <v-img class="gifpublicidad " :src="gifpublicidad"></v-img>
            </v-container>
@@ -49,27 +50,32 @@
 
        <v-layout row wrap>
         <v-flex xs12 sm6 md3  >
+         <v-card dark tile flat color="#b88c0b" >
           <v-container>
          <div class="containercss">
-           <v-img class="imagecss" :src="HabitacionIndividual"></v-img>
+           <v-img height="166px" :src="HabitacionIndividual"></v-img>
             <div class="overlaycss">
             <div class="textcss ">Habitacion Individual</div>
             </div>
           </div>
           </v-container>
+             </v-card>
         </v-flex>
 
         <v-flex xs12 sm6 md3 >
+         <v-card dark tile flat color="#b88c0b" >
             <v-container>
          <div class="containercss">
-           <v-img class="imagecss" :src="HabitacionDoble"></v-img>
+           <v-img height="166px":src="HabitacionDoble"></v-img>
             <div class="overlaycss">
             <div class="textcss ">Habitacion Doble</div>
             </div>
           </div>
           </v-container>
+              </v-card>
         </v-flex>
         <v-flex xs12 sm6 md3 >
+          <v-card dark tile flat color="#b88c0b" >
             <v-container>
          <div class="containercss">
            <v-img class="imagecss" :src="HabitacionMatrimoniales"></v-img>
@@ -78,8 +84,10 @@
             </div>
           </div>
           </v-container>
+            </v-card>
         </v-flex>
          <v-flex xs12 sm6 md3 >
+           <v-card dark tile flat color="#b88c0b" >
              <v-container>
          <div class="containercss">
            <v-img class="imagecss" :src="HabitacionSuite"></v-img>
@@ -88,12 +96,13 @@
             </div>
           </div>
           </v-container>
+           </v-card>
         </v-flex>
       </v-layout>
 
       <v-layout row>
         <v-flex xs12 >
-          <v-card dark tile flat color="green">
+          <v-card dark tile flat color="#0bb5a4">
             <v-card-text>
                <v-img class="imagen1"  :src="portadahotel" ></v-img>
             </v-card-text>
@@ -102,7 +111,7 @@
       </v-layout>
       <v-layout row wrap>
         <v-flex xs12 sm6 md4  >
-          <v-card dark tile flat color="green">
+          <v-card dark tile flat color="#b88c0b">
             <v-card-text class="MainImage1">
               <div class = "Container" >
                   <div class = "MainImage" >
@@ -119,7 +128,7 @@
           </v-card>
         </v-flex>
         <v-flex xs12 sm6 md4 >
-          <v-card dark tile flat color="blue">
+          <v-card dark tile flat color="#0bb5a4">
             <v-card-text class="MainImage1">
               <div class = "Container" >
                   <div class = "MainImage" > <img :src = "pareja" alt = "Efecto CSS" >
@@ -135,7 +144,7 @@
           </v-card>
         </v-flex>
         <v-flex xs12 sm6 md4 >
-          <v-card dark tile flat color="green">
+          <v-card dark tile flat color="#b88c0b">
             <v-card-text class="MainImage1">
               <div class = "Container" >
                   <div class = "MainImage" > <img :src = "conferencia" alt = "Efecto CSS" >
@@ -288,7 +297,7 @@ width: 100%;
 }
 .color{
   background-color: transparent;
-  color: rgb(0, 0, 0);
+  color: rgb(206, 245, 15);
 }
 .barrabuscar{
   width: 1300px;

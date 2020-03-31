@@ -239,7 +239,7 @@ export default {
       margin: -17px 0px;
       padding-top: 20px;
     }
-        .v-content{
-          background-color: rgb(90, 81, 81)
+     .v-content{
+     background-color: rgb(201, 26, 26)
     }
 </style>

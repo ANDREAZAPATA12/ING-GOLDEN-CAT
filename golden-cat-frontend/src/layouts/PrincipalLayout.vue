@@ -1,6 +1,6 @@
 <template>
   <v-app id="inspire" dark>
-    <v-toolbar app color="red">
+    <v-toolbar app color="#01579B">
 
         <v-layout row wrap>
             <v-flex xs2>
@@ -82,12 +82,12 @@
         </v-layout>
       </v-container>
     </v-content>
-      <v-footer color="blue"
+      <v-footer color="#031138"
       height="auto">
             <v-container >
       <v-layout row>
         <v-flex xs3>
-          <v-card dark tile flat color="#ffff00">
+          <v-card dark tile flat color="transparent">
             <p class="text-md-center subheading" >PAGO SEGURO CON <br> NUESTRAS TARJETAS DE CREDITO</p>
           </v-card>
         </v-flex>
@@ -97,7 +97,7 @@
           </v-card>
         </v-flex>
          <v-flex xs2>
-          <v-card dark tile flat color="transparent">
+          <v-card dark tile flat color="#9aabdb">
              <v-img  :src="imgtarjeta" ></v-img>
              <v-divider></v-divider>
              <p class="text-md-center caption" > TARJETAS DE CREDITO</p>
@@ -109,10 +109,10 @@
           </v-card>
         </v-flex>
          <v-flex xs2>
-          <v-card dark tile flat color="transparent">
+          <v-card dark tile flat color="#9aabdb">
              <v-img height="53px"   :src="efectybaloto" ></v-img>
              <v-divider ></v-divider>
-             <p class="text-md-center caption" > TEARJETA DEBITO</p>
+             <p class="text-md-center caption" > TARJETAS DEBITO</p>
 
           </v-card>
         </v-flex>
@@ -159,12 +159,12 @@
         </v-flex>
         <v-flex xs3  >
           <v-card dark tile flat color="transparent">
-             <v-img height="53px"   :src="escudomincomercio" ></v-img>
+             <v-img height="60px"   :src="escudomincomercio" ></v-img>
           </v-card>
         </v-flex>
         <v-flex xs3   >
           <v-card dark tile flat color="transparent">
-            <v-img height="53px"   :src="camaracolombiana" ></v-img>
+            <v-img height="55px"   :src="camaracolombiana" ></v-img>
           </v-card>
         </v-flex>
         <v-flex xs4  >
@@ -233,5 +233,7 @@ export default {
 .v-toolbar{
   z-index: 5;
 }
-
+ .v-content{
+     background-color: rgb(1, 46, 82)
+    }
 </style>
