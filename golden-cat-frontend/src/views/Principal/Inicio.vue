@@ -160,18 +160,21 @@
           </v-card>
         </v-flex>
       </v-layout>
-
     </v-stepper>
+   /*primera*/
+
     <v-container  v-show="reservaConfirm">
      <v-layout wrap justify-space-around row>
-      <template v-for="n in 12">
-        <v-flex xs12 sm3 :key="n" mb-1 pa-2>
+      <template v-for="n in 1">
+
+        <v-flex xs1 sm3 :key="n" mb-1 pa-2>
           <v-hover>
-            <v-card class="mx-auto" slot-scope="{ hover }" color="grey darken-3" max-width="600" >
+            <v-card class="mx-auto" slot-scope="{ hover }" color="green" max-width="600" >
               <v-img :aspect-ratio="16/9" :src="habitacion2">
                 <v-expand-transition>
-                  <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  style="height: 100%;" >
-                    35.000$
+                  <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  
+                  style="height: 100%;" >
+                 meshume
                   </div>
                 </v-expand-transition>
               </v-img>
@@ -206,11 +209,497 @@
                 </v-layout>
               </v-card-text>
             </v-card>
-          </v-hover>
-        </v-flex>
+           </v-hover>
+           </v-flex>
+           <v-flex xs1 sm3 :key="n" mb-1 pa-2>
+          <v-hover>
+            <v-card class="mx-auto" slot-scope="{ hover }" color="green" max-width="600" >
+              <v-img :aspect-ratio="16/9" :src="habitacion2">
+                <v-expand-transition>
+                  <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  
+                  style="height: 100%;" >
+                 meshume
+                  </div>
+                </v-expand-transition>
+              </v-img>
+              <v-card-text  class="pt-4"  style="position: relative;">
+                <v-btn  absolute color="blue" class="white--text" fab  right top to="/Datos_Compra" >
+                  <v-icon>local_grocery_store</v-icon>
+                </v-btn>
+                <v-layout row>
+                  <v-flex xs6 order-lg2>
+                    <v-card-text  class="margen text-sm-left">tipo de habitacion</v-card-text>
+                  </v-flex>
+                  <v-flex xs6>
+                    <v-card-text  class="margen " >sencilla
+                    </v-card-text>
+                  </v-flex>
+                </v-layout>
+                <v-layout row>
+                  <v-flex xs6 order-lg2>
+                    <v-card-text class="margen text-sm-left">2</v-card-text>
+                  </v-flex>
+                  <v-flex  xs6>
+                    <v-card-text class="margen" v-model="email">adultos:</v-card-text>
+                  </v-flex>
+                </v-layout>
+                <v-layout row>
+                  <v-flex xs6 order-lg2>
+                    <v-card-text class="margen text-sm-left" >2</v-card-text>
+                  </v-flex>
+                  <v-flex xs6>
+                    <v-card-text class="margen" >niños:</v-card-text>
+                  </v-flex>
+                </v-layout>
+              </v-card-text>
+            </v-card>
+           </v-hover>
+           </v-flex>
+             <v-flex xs1 sm3 :key="n" mb-1 pa-2>
+          <v-hover>
+            <v-card class="mx-auto" slot-scope="{ hover }" color="green" max-width="600" >
+              <v-img :aspect-ratio="16/9" :src="habitacion2">
+                <v-expand-transition>
+                  <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  
+                  style="height: 100%;" >
+                 meshume
+                  </div>
+                </v-expand-transition>
+              </v-img>
+              <v-card-text  class="pt-4"  style="position: relative;">
+                <v-btn  absolute color="blue" class="white--text" fab  right top to="/Datos_Compra" >
+                  <v-icon>local_grocery_store</v-icon>
+                </v-btn>
+                <v-layout row>
+                  <v-flex xs6 order-lg2>
+                    <v-card-text  class="margen text-sm-left">tipo de habitacion</v-card-text>
+                  </v-flex>
+                  <v-flex xs6>
+                    <v-card-text  class="margen " >sencilla
+                    </v-card-text>
+                  </v-flex>
+                </v-layout>
+                <v-layout row>
+                  <v-flex xs6 order-lg2>
+                    <v-card-text class="margen text-sm-left">2</v-card-text>
+                  </v-flex>
+                  <v-flex  xs6>
+                    <v-card-text class="margen" v-model="email">adultos:</v-card-text>
+                  </v-flex>
+                </v-layout>
+                <v-layout row>
+                  <v-flex xs6 order-lg2>
+                    <v-card-text class="margen text-sm-left" >2</v-card-text>
+                  </v-flex>
+                  <v-flex xs6>
+                    <v-card-text class="margen" >niños:</v-card-text>
+                  </v-flex>
+                </v-layout>
+              </v-card-text>
+            </v-card>
+           </v-hover>
+           </v-flex>
+             <v-flex xs1 sm3 :key="n" mb-1 pa-2>
+          <v-hover>
+            <v-card class="mx-auto" slot-scope="{ hover }" color="green" max-width="600" >
+              <v-img :aspect-ratio="16/9" :src="habitacion2">
+                <v-expand-transition>
+                  <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  
+                  style="height: 100%;" >
+                 meshume
+                  </div>
+                </v-expand-transition>
+              </v-img>
+              <v-card-text  class="pt-4"  style="position: relative;">
+                <v-btn  absolute color="blue" class="white--text" fab  right top to="/Datos_Compra" >
+                  <v-icon>local_grocery_store</v-icon>
+                </v-btn>
+                <v-layout row>
+                  <v-flex xs6 order-lg2>
+                    <v-card-text  class="margen text-sm-left">tipo de habitacion</v-card-text>
+                  </v-flex>
+                  <v-flex xs6>
+                    <v-card-text  class="margen " >sencilla
+                    </v-card-text>
+                  </v-flex>
+                </v-layout>
+                <v-layout row>
+                  <v-flex xs6 order-lg2>
+                    <v-card-text class="margen text-sm-left">2</v-card-text>
+                  </v-flex>
+                  <v-flex  xs6>
+                    <v-card-text class="margen" v-model="email">adultos:</v-card-text>
+                  </v-flex>
+                </v-layout>
+                <v-layout row>
+                  <v-flex xs6 order-lg2>
+                    <v-card-text class="margen text-sm-left" >2</v-card-text>
+                  </v-flex>
+                  <v-flex xs6>
+                    <v-card-text class="margen" >niños:</v-card-text>
+                  </v-flex>
+                </v-layout>
+              </v-card-text>
+            </v-card>
+           </v-hover>
+           </v-flex>
+             <v-flex xs1 sm3 :key="n" mb-1 pa-2>
+          <v-hover>
+            <v-card class="mx-auto" slot-scope="{ hover }" color="green" max-width="600" >
+              <v-img :aspect-ratio="16/9" :src="habitacion2">
+                <v-expand-transition>
+                  <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  
+                  style="height: 100%;" >
+                 meshume
+                  </div>
+                </v-expand-transition>
+              </v-img>
+              <v-card-text  class="pt-4"  style="position: relative;">
+                <v-btn  absolute color="blue" class="white--text" fab  right top to="/Datos_Compra" >
+                  <v-icon>local_grocery_store</v-icon>
+                </v-btn>
+                <v-layout row>
+                  <v-flex xs6 order-lg2>
+                    <v-card-text  class="margen text-sm-left">tipo de habitacion</v-card-text>
+                  </v-flex>
+                  <v-flex xs6>
+                    <v-card-text  class="margen " >sencilla
+                    </v-card-text>
+                  </v-flex>
+                </v-layout>
+                <v-layout row>
+                  <v-flex xs6 order-lg2>
+                    <v-card-text class="margen text-sm-left">2</v-card-text>
+                  </v-flex>
+                  <v-flex  xs6>
+                    <v-card-text class="margen" v-model="email">adultos:</v-card-text>
+                  </v-flex>
+                </v-layout>
+                <v-layout row>
+                  <v-flex xs6 order-lg2>
+                    <v-card-text class="margen text-sm-left" >2</v-card-text>
+                  </v-flex>
+                  <v-flex xs6>
+                    <v-card-text class="margen" >niños:</v-card-text>
+                  </v-flex>
+                </v-layout>
+              </v-card-text>
+            </v-card>
+           </v-hover>
+           </v-flex>
+             <v-flex xs1 sm3 :key="n" mb-1 pa-2>
+          <v-hover>
+            <v-card class="mx-auto" slot-scope="{ hover }" color="green" max-width="600" >
+              <v-img :aspect-ratio="16/9" :src="habitacion2">
+                <v-expand-transition>
+                  <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  
+                  style="height: 100%;" >
+                 meshume
+                  </div>
+                </v-expand-transition>
+              </v-img>
+              <v-card-text  class="pt-4"  style="position: relative;">
+                <v-btn  absolute color="blue" class="white--text" fab  right top to="/Datos_Compra" >
+                  <v-icon>local_grocery_store</v-icon>
+                </v-btn>
+                <v-layout row>
+                  <v-flex xs6 order-lg2>
+                    <v-card-text  class="margen text-sm-left">tipo de habitacion</v-card-text>
+                  </v-flex>
+                  <v-flex xs6>
+                    <v-card-text  class="margen " >sencilla
+                    </v-card-text>
+                  </v-flex>
+                </v-layout>
+                <v-layout row>
+                  <v-flex xs6 order-lg2>
+                    <v-card-text class="margen text-sm-left">2</v-card-text>
+                  </v-flex>
+                  <v-flex  xs6>
+                    <v-card-text class="margen" v-model="email">adultos:</v-card-text>
+                  </v-flex>
+                </v-layout>
+                <v-layout row>
+                  <v-flex xs6 order-lg2>
+                    <v-card-text class="margen text-sm-left" >2</v-card-text>
+                  </v-flex>
+                  <v-flex xs6>
+                    <v-card-text class="margen" >niños:</v-card-text>
+                  </v-flex>
+                </v-layout>
+              </v-card-text>
+            </v-card>
+           </v-hover>
+           </v-flex>
+             <v-flex xs1 sm3 :key="n" mb-1 pa-2>
+          <v-hover>
+            <v-card class="mx-auto" slot-scope="{ hover }" color="green" max-width="600" >
+              <v-img :aspect-ratio="16/9" :src="habitacion2">
+                <v-expand-transition>
+                  <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  
+                  style="height: 100%;" >
+                 meshume
+                  </div>
+                </v-expand-transition>
+              </v-img>
+              <v-card-text  class="pt-4"  style="position: relative;">
+                <v-btn  absolute color="blue" class="white--text" fab  right top to="/Datos_Compra" >
+                  <v-icon>local_grocery_store</v-icon>
+                </v-btn>
+                <v-layout row>
+                  <v-flex xs6 order-lg2>
+                    <v-card-text  class="margen text-sm-left">tipo de habitacion</v-card-text>
+                  </v-flex>
+                  <v-flex xs6>
+                    <v-card-text  class="margen " >sencilla
+                    </v-card-text>
+                  </v-flex>
+                </v-layout>
+                <v-layout row>
+                  <v-flex xs6 order-lg2>
+                    <v-card-text class="margen text-sm-left">2</v-card-text>
+                  </v-flex>
+                  <v-flex  xs6>
+                    <v-card-text class="margen" v-model="email">adultos:</v-card-text>
+                  </v-flex>
+                </v-layout>
+                <v-layout row>
+                  <v-flex xs6 order-lg2>
+                    <v-card-text class="margen text-sm-left" >2</v-card-text>
+                  </v-flex>
+                  <v-flex xs6>
+                    <v-card-text class="margen" >niños:</v-card-text>
+                  </v-flex>
+                </v-layout>
+              </v-card-text>
+            </v-card>
+           </v-hover>
+           </v-flex>
+             <v-flex xs1 sm3 :key="n" mb-1 pa-2>
+          <v-hover>
+            <v-card class="mx-auto" slot-scope="{ hover }" color="green" max-width="600" >
+              <v-img :aspect-ratio="16/9" :src="habitacion2">
+                <v-expand-transition>
+                  <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  
+                  style="height: 100%;" >
+                 meshume
+                  </div>
+                </v-expand-transition>
+              </v-img>
+              <v-card-text  class="pt-4"  style="position: relative;">
+                <v-btn  absolute color="blue" class="white--text" fab  right top to="/Datos_Compra" >
+                  <v-icon>local_grocery_store</v-icon>
+                </v-btn>
+                <v-layout row>
+                  <v-flex xs6 order-lg2>
+                    <v-card-text  class="margen text-sm-left">tipo de habitacion</v-card-text>
+                  </v-flex>
+                  <v-flex xs6>
+                    <v-card-text  class="margen " >sencilla
+                    </v-card-text>
+                  </v-flex>
+                </v-layout>
+                <v-layout row>
+                  <v-flex xs6 order-lg2>
+                    <v-card-text class="margen text-sm-left">2</v-card-text>
+                  </v-flex>
+                  <v-flex  xs6>
+                    <v-card-text class="margen" v-model="email">adultos:</v-card-text>
+                  </v-flex>
+                </v-layout>
+                <v-layout row>
+                  <v-flex xs6 order-lg2>
+                    <v-card-text class="margen text-sm-left" >2</v-card-text>
+                  </v-flex>
+                  <v-flex xs6>
+                    <v-card-text class="margen" >niños:</v-card-text>
+                  </v-flex>
+                </v-layout>
+              </v-card-text>
+            </v-card>
+           </v-hover>
+           </v-flex>
+             <v-flex xs1 sm3 :key="n" mb-1 pa-2>
+          <v-hover>
+            <v-card class="mx-auto" slot-scope="{ hover }" color="green" max-width="600" >
+              <v-img :aspect-ratio="16/9" :src="habitacion2">
+                <v-expand-transition>
+                  <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  
+                  style="height: 100%;" >
+                 meshume
+                  </div>
+                </v-expand-transition>
+              </v-img>
+              <v-card-text  class="pt-4"  style="position: relative;">
+                <v-btn  absolute color="blue" class="white--text" fab  right top to="/Datos_Compra" >
+                  <v-icon>local_grocery_store</v-icon>
+                </v-btn>
+                <v-layout row>
+                  <v-flex xs6 order-lg2>
+                    <v-card-text  class="margen text-sm-left">tipo de habitacion</v-card-text>
+                  </v-flex>
+                  <v-flex xs6>
+                    <v-card-text  class="margen " >sencilla
+                    </v-card-text>
+                  </v-flex>
+                </v-layout>
+                <v-layout row>
+                  <v-flex xs6 order-lg2>
+                    <v-card-text class="margen text-sm-left">2</v-card-text>
+                  </v-flex>
+                  <v-flex  xs6>
+                    <v-card-text class="margen" v-model="email">adultos:</v-card-text>
+                  </v-flex>
+                </v-layout>
+                <v-layout row>
+                  <v-flex xs6 order-lg2>
+                    <v-card-text class="margen text-sm-left" >2</v-card-text>
+                  </v-flex>
+                  <v-flex xs6>
+                    <v-card-text class="margen" >niños:</v-card-text>
+                  </v-flex>
+                </v-layout>
+              </v-card-text>
+            </v-card>
+           </v-hover>
+           </v-flex>
+             <v-flex xs1 sm3 :key="n" mb-1 pa-2>
+          <v-hover>
+            <v-card class="mx-auto" slot-scope="{ hover }" color="green" max-width="600" >
+              <v-img :aspect-ratio="16/9" :src="habitacion2">
+                <v-expand-transition>
+                  <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  
+                  style="height: 100%;" >
+                 meshume
+                  </div>
+                </v-expand-transition>
+              </v-img>
+              <v-card-text  class="pt-4"  style="position: relative;">
+                <v-btn  absolute color="blue" class="white--text" fab  right top to="/Datos_Compra" >
+                  <v-icon>local_grocery_store</v-icon>
+                </v-btn>
+                <v-layout row>
+                  <v-flex xs6 order-lg2>
+                    <v-card-text  class="margen text-sm-left">tipo de habitacion</v-card-text>
+                  </v-flex>
+                  <v-flex xs6>
+                    <v-card-text  class="margen " >sencilla
+                    </v-card-text>
+                  </v-flex>
+                </v-layout>
+                <v-layout row>
+                  <v-flex xs6 order-lg2>
+                    <v-card-text class="margen text-sm-left">2</v-card-text>
+                  </v-flex>
+                  <v-flex  xs6>
+                    <v-card-text class="margen" v-model="email">adultos:</v-card-text>
+                  </v-flex>
+                </v-layout>
+                <v-layout row>
+                  <v-flex xs6 order-lg2>
+                    <v-card-text class="margen text-sm-left" >2</v-card-text>
+                  </v-flex>
+                  <v-flex xs6>
+                    <v-card-text class="margen" >niños:</v-card-text>
+                  </v-flex>
+                </v-layout>
+              </v-card-text>
+            </v-card>
+           </v-hover>
+           </v-flex>
+             <v-flex xs1 sm3 :key="n" mb-1 pa-2>
+          <v-hover>
+            <v-card class="mx-auto" slot-scope="{ hover }" color="green" max-width="600" >
+              <v-img :aspect-ratio="16/9" :src="habitacion2">
+                <v-expand-transition>
+                  <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  
+                  style="height: 100%;" >
+                 meshume
+                  </div>
+                </v-expand-transition>
+              </v-img>
+              <v-card-text  class="pt-4"  style="position: relative;">
+                <v-btn  absolute color="blue" class="white--text" fab  right top to="/Datos_Compra" >
+                  <v-icon>local_grocery_store</v-icon>
+                </v-btn>
+                <v-layout row>
+                  <v-flex xs6 order-lg2>
+                    <v-card-text  class="margen text-sm-left">tipo de habitacion</v-card-text>
+                  </v-flex>
+                  <v-flex xs6>
+                    <v-card-text  class="margen " >sencilla
+                    </v-card-text>
+                  </v-flex>
+                </v-layout>
+                <v-layout row>
+                  <v-flex xs6 order-lg2>
+                    <v-card-text class="margen text-sm-left">2</v-card-text>
+                  </v-flex>
+                  <v-flex  xs6>
+                    <v-card-text class="margen" v-model="email">adultos:</v-card-text>
+                  </v-flex>
+                </v-layout>
+                <v-layout row>
+                  <v-flex xs6 order-lg2>
+                    <v-card-text class="margen text-sm-left" >2</v-card-text>
+                  </v-flex>
+                  <v-flex xs6>
+                    <v-card-text class="margen" >niños:</v-card-text>
+                  </v-flex>
+                </v-layout>
+              </v-card-text>
+            </v-card>
+           </v-hover>
+           </v-flex>
+             <v-flex xs1 sm3 :key="n" mb-1 pa-2>
+          <v-hover>
+            <v-card class="mx-auto" slot-scope="{ hover }" color="green" max-width="600" >
+              <v-img :aspect-ratio="16/9" :src="habitacion2">
+                <v-expand-transition>
+                  <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  
+                  style="height: 100%;" >
+                 meshume
+                  </div>
+                </v-expand-transition>
+              </v-img>
+              <v-card-text  class="pt-4"  style="position: relative;">
+                <v-btn  absolute color="blue" class="white--text" fab  right top to="/Datos_Compra" >
+                  <v-icon>local_grocery_store</v-icon>
+                </v-btn>
+                <v-layout row>
+                  <v-flex xs6 order-lg2>
+                    <v-card-text  class="margen text-sm-left">tipo de habitacion</v-card-text>
+                  </v-flex>
+                  <v-flex xs6>
+                    <v-card-text  class="margen " >sencilla
+                    </v-card-text>
+                  </v-flex>
+                </v-layout>
+                <v-layout row>
+                  <v-flex xs6 order-lg2>
+                    <v-card-text class="margen text-sm-left">2</v-card-text>
+                  </v-flex>
+                  <v-flex  xs6>
+                    <v-card-text class="margen" v-model="email">adultos:</v-card-text>
+                  </v-flex>
+                </v-layout>
+                <v-layout row>
+                  <v-flex xs6 order-lg2>
+                    <v-card-text class="margen text-sm-left" >2</v-card-text>
+                  </v-flex>
+                  <v-flex xs6>
+                    <v-card-text class="margen" >niños:</v-card-text>
+                  </v-flex>
+                </v-layout>
+              </v-card-text>
+            </v-card>
+           </v-hover>
+           </v-flex>
       </template>
-    </v-layout>
+     </v-layout>
     </v-container>
+    /*segunda*/
+
   </section>
 </template>
 <script>

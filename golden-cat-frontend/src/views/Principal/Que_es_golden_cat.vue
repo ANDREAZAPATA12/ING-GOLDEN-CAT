@@ -86,21 +86,21 @@
                 . Es por esto, que nos basamos en los siguientes valores para cumplir con este fin:
                 </blockquote>
               </v-card-text>
-        </v-flex >
-      </v-layout>
+           </v-flex >
+            </v-layout>
             <v-layout row>
-        <v-flex xs4 >
-          <v-container class="color1" >
-          <v-card  tile flat color="transparent">
+           <v-flex xs4 >
+           <v-container class="color1" >
+           <v-card  tile flat color="transparent">
             <h3 class="letra text-md-center" >FRESCURA</h3>
             <P>Buscamos conocer las necesidades y expectativas
               de nuestros viajeros para que puedan vivir momentos
               llenos de calidez que los haga sentir mejor que en casa.</P>
             <video width="300px" height="170px" src="@/assets/videos/Nuestros valores (Calidez).mp4" controls></video>
-          </v-card>
-          </v-container>
-        </v-flex>
-        <v-flex xs4>
+            </v-card>
+             </v-container>
+           </v-flex>
+           <v-flex xs4>
           <v-container class="color2" >
           <v-card tile flat color="transparent">
             <h3 class="letra colorletra text-md-center" >CALIDEZ</h3>

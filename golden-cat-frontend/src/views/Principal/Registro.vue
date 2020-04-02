@@ -3,7 +3,7 @@
 <v-layout row>
         <v-flex xs6>
           <v-card dark tile flat color="transparent">
-            <v-img height="350px" width="300px" :src="logo" ></v-img>
+            <v-img height="380px" width="280px":src="logo" ></v-img>
 
           </v-card>
         </v-flex>

@@ -1,6 +1,10 @@
 <template>
   <v-container fluid>
-    <v-layout row>
+    <v-layout row center >
+      <v-card dark tile flat color="transparent">
+            <v-img height="300px" width="400px":src="logo" ></v-img>
+
+          </v-card>
       <v-flex xs3 order-lg2>
         <v-card-text  class="transparent text-xs-center">
            <div > FOTO DE PERFIL</div>
@@ -74,7 +78,7 @@
       <v-flex xs12 order-lg2  class="transparent text-xs-center">
         <v-dialog v-model="dialogPassword" persistent max-width="600px">
           <template v-slot:activator="{ on }">
-            <v-btn color="blue darken-4" dark v-on="on">Editar Contraseña</v-btn>
+            <v-btn color="red" dark v-on="on">Editar Contraseña</v-btn>
             <v-btn  color="success">Guardar cambios </v-btn>
           </template>
 
@@ -86,22 +90,22 @@
               <v-container grid-list-md>
                 <v-layout wrap>
                   <v-flex xs12>
-                    <v-text-field color="blue darken-4" label="Escribe Password actual*" type="password" required></v-text-field>
+                    <v-text-field color="white" label="Escribe Contraseña Actual*" type="password" required></v-text-field>
                   </v-flex>
                   <v-flex xs12>
-                    <v-text-field color="blue darken-4" label="Escribe Password nuevo*" type="password" required></v-text-field>
+                    <v-text-field color="white" label="Escribe Contraseña Nueva*" type="password" required></v-text-field>
                   </v-flex>
                   <v-flex xs12>
-                    <v-text-field color="blue darken-4" label="Confirma Password nuevo*" type="password" required></v-text-field>
+                    <v-text-field color="white" label="Confirma Contraseña Nueva*" type="password" required></v-text-field>
                   </v-flex>
                 </v-layout>
               </v-container>
-              <small>*indicates required field</small>
+              <small>*Campo Requerido</small>
             </v-card-text>
             <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn color="blue darken-4" dark @click="dialogPassword = false">Close</v-btn>
-              <v-btn color="blue darken-4" dark @click="dialogPassword = false">Save</v-btn>
+              <v-btn color="blue darken-4" dark @click="dialogPassword = false">Salir</v-btn>
+              <v-btn color="blue darken-4" dark @click="dialogPassword = false">Guardar</v-btn>
             </v-card-actions>
           </v-card>
 

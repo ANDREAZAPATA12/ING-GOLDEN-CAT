@@ -5,7 +5,8 @@
         <iframe id="gmap_canvas"  width="100%" height="100%" src="https://maps.google.com/maps?q=google&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no"  marginheight="0"  marginwidth="0" />
       </div>
     </div>
-    <v-card flatcolor="transparent" >
+     <v-card flatcolor="red" >
+        <v-card dark tile flat color="black" >
       <v-card-text  class=" text-xs-center">
         <div class="  text-xs-center">
           <span class="letra4">CORREOS ELECTRONICOS</span>
@@ -32,15 +33,17 @@
         </div>
         <v-layout row>
           <v-flex xs4 >
+            <v-card dark tile flat color="#b88c0b" >
             <v-container>
               <v-card>
                 <v-card>
+                  <v-card dark tile flat color="black" >
                   <v-img class="tamañoimg" :src="limpiesa"></v-img>
                   <v-card-title primary-title>
                     <div>
-                      <h3 class="headline mb-0">LIMPIESA</h3>
-                      <p class="tamañop text-sm-left">  se requiere hombre o mujeres para trabajar como operarios de limpieza
-                      con experiencia en limpieza, para realizar funciones propias del cargo, desinfección de baños,
+                      <h3 class="headline mb-0">LIMPIEZA</h3>
+                      <p class="tamañop text-sm-left">  Se requiere hombre o mujeres para trabajar como operarios de limpieza
+                      con experiencia, para realizar funciones propias del cargo, desinfección de baños,
                       pisos, manejo de maquinaria de pisos, paredes, vidrios, techos, consultorios</p>
                     </div>
                   </v-card-title>
@@ -49,19 +52,23 @@
                   </v-card-actions>
                 </v-card>
               </v-card>
+              </v-card>
             </v-container>
+            </v-card>
           </v-flex>
           <v-flex xs4>
+           <v-card dark tile flat color="#b88c0b" >
             <v-container>
               <v-card>
                 <v-card>
+                <v-card dark tile flat color="black" >
                   <v-img class="tamañoimg" :src="recepcionista"></v-img>
                   <v-card-title primary-title>
                     <div>
                       <h3 class="headline mb-0">RECEPCIONISTA</h3>
                       <p class="tamañop text-sm-left" >Empresa requiere profesional en administración o carreras afines para que desempeñe
                       funciones, como administrador, manejo de proveedores y manejo de personal. Ademas es
-                      Indispensable tener experiencia en Catering, servicio y atención a eventos. Liderazgo,
+                      indispensable tener experiencia en Catering, servicio y atención a eventos. Liderazgo,
                       manejo de personal masivo y manejo de Excel, un año de experiencia laboral.</p>
                     </div>
                   </v-card-title>
@@ -70,20 +77,24 @@
                   </v-card-actions>
                 </v-card>
               </v-card>
+              </v-card>
             </v-container>
+             </v-card>
           </v-flex>
           <v-flex xs4>
+              <v-card dark tile flat color="#b88c0b" >
             <v-container>
               <v-card >
                 <v-card>
+                 <v-card dark tile flat color="black" >
                   <v-img class="tamañoimg" :src="mesero"></v-img>
                   <v-card-title primary-title>
                     <div>
                       <h3 class="headline mb-0">MESA Y BAR</h3>
-                      <p class="tamañop text-sm-left" >Empresa requiere profesional en administración o carreras afines para que desempeñe
-                      funciones, como administrador, manejo de proveedores y manejo de personal. Ademas es
-                      Indispensable tener experiencia en Catering, servicio y atención a eventos. Liderazgo,
-                      manejo de personal masivo y manejo de Excel, un año de experiencia laboral.</p>
+                      <p class="tamañop text-sm-left" >Empresa requiere técnicos en mesa
+                       y bar con experiencia certificada en protocolo y servicio, disponibilidad total de tiempo, 
+                       orientado al logro y al resultado. Conocimiento en las buenas prácticas de manufactura.
+                       Un año de experiencia.</p>
                     </div>
                   </v-card-title>
                   <v-card-actions>
@@ -91,10 +102,13 @@
                   </v-card-actions>
                 </v-card>
               </v-card>
+               </v-card>
             </v-container>
+             </v-card>
           </v-flex>
         </v-layout>
       </v-card-text>
+       </v-card>
     </v-card>
   </div>
 </template>
