@@ -2,8 +2,11 @@
    <v-container fluid>
       <v-layout row wrap>
         <v-flex d-flex xs6 sm md>
+        <v-card dark tile flat color="#b88c0b">
           <v-card flatcolor="transparent" >
+          <v-card dark tile flat color="#739174">
             <v-card-text>
+            
             <v-container  fill-height fluid>
               <v-layout fill-height>
                 <v-flex  justify-center align-center xs12 align-end flexbox>
@@ -20,7 +23,10 @@
                     de productos de calidad, música selecta y excelente servicio</span>
             </div>
           </v-card-title>
+          
             </v-card-text>
+            </v-card>
+          </v-card>
           </v-card>
         </v-flex >
          <v-flex  d-flex xs6 sm6 md6>
@@ -39,7 +45,9 @@
     </v-carousel>
         </v-flex>
         <v-flex d-flex xs6 sm md>
+        <v-card dark tile flat color="#b88c0b">
           <v-card flatcolor="transparent" >
+          <v-card dark tile flat color="#739174">
             <v-card-text>
             <v-container fill-height fluid>
               <v-layout fill-height>
@@ -59,13 +67,17 @@
             </div>
           </v-card-title>
             </v-card-text>
+            </v-card>
+          </v-card>
           </v-card>
         </v-flex >
       </v-layout>
 
       <v-layout row wrap>
         <v-flex d-flex xs6 sm md>
+          <v-card dark tile flat color="#b88c0b">
           <v-card flatcolor="transparent" >
+          <v-card dark tile flat color="#739174">
             <v-card-text>
             <v-container fill-height fluid>
               <v-layout fill-height>
@@ -84,6 +96,8 @@
           </v-card-title>
             </v-card-text>
           </v-card>
+          </v-card>
+          </v-card>
         </v-flex >
          <v-flex  d-flex xs6 sm6 md6>
           <v-carousel height="300px">
@@ -101,7 +115,9 @@
             </v-carousel>
         </v-flex>
         <v-flex d-flex xs6 sm md>
+          <v-card dark tile flat color="#b88c0b">
           <v-card flatcolor="transparent" >
+          <v-card dark tile flat color="#739174">
             <v-card-text>
             <v-container fill-height fluid>
               <v-layout fill-height>
@@ -122,12 +138,16 @@
           </v-card-title>
             </v-card-text>
           </v-card>
+          </v-card>
+          </v-card>
         </v-flex >
       </v-layout>
 
        <v-layout row wrap>
         <v-flex d-flex xs6 sm md>
+          <v-card dark tile flat color="#b88c0b">
           <v-card flatcolor="transparent" >
+          <v-card dark tile flat color="#739174">
             <v-card-text>
             <v-container fill-height fluid>
               <v-layout fill-height>
@@ -138,13 +158,16 @@
             </v-container>
           <v-card-title>
             <div>
-              <h3 class="headline">¡Un Restaurante Ideal para Ti!</h3>
-              <span>Estamos dedicados a brindar momentos inolvidables y
-                servicios gastronómicos de alta calidad, ponemos todo nuestro
-                amor y máximo empeño en beneficio de nuestros comensales.</span>
+              <h3 class="headline">¡Un Espacio Para Disfrutar!</h3>
+              <span>Los jardines, los parques, las zonas verdes
+              o el arbolado son elementos clave para mantener una 
+              buena calidad de vida en las ciudades
+              y favorecer el bienestar de las personas..</span>
             </div>
           </v-card-title>
             </v-card-text>
+          </v-card>
+          </v-card>
           </v-card>
         </v-flex >
         <v-flex  d-flex xs6 sm6 md6>

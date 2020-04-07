@@ -48,9 +48,9 @@
 
       <v-layout row >
         <v-flex xs12 >
-          <v-card dark tile flat color="#0bb5a4" >
+          <v-card dark tile flat color="#6e0505" >
 
-              <h3 class="letra2 text-md-center indigo--text  "  >La Mejor Opcion Para Ti y Tu familia</h3>
+              <h3 class="letra2 text-md-center white--text  "  >La Mejor Opcion Para Ti y Tu familia</h3>
              <v-container>
               <v-img class="gifpublicidad " :src="gifpublicidad"></v-img>
            </v-container>
@@ -112,7 +112,7 @@
 
       <v-layout row>
         <v-flex xs12 >
-          <v-card dark tile flat color="#0bb5a4">
+          <v-card dark tile flat color="#6e0505">
             <v-card-text>
                <v-img class="imagen1"  :src="portadahotel" ></v-img>
             </v-card-text>
@@ -138,7 +138,7 @@
           </v-card>
         </v-flex>
         <v-flex xs12 sm6 md4 >
-          <v-card dark tile flat color="#0bb5a4">
+          <v-card dark tile flat color="#6e0505">
             <v-card-text class="MainImage1">
               <div class = "Container" >
                   <div class = "MainImage" > <img :src = "pareja" alt = "Efecto CSS" >
@@ -707,7 +707,6 @@
       </template>
      </v-layout>
     </v-container>
-    /*segunda*/
 
   </section>
 </template>

@@ -130,7 +130,8 @@
       max-width="800"
       persistent>
        <v-card>
-        <v-card-title class="headline grey lighten-3">TÉRMINOS Y POLITICAS DE PRIVACIDAD</v-card-title>
+        <v-card-title class="headline green lighten-3">TÉRMINOS Y POLITICAS DE PRIVACIDAD</v-card-title>
+        <v-card dark tile flat color="#076e62">
         <v-card-text>
           <span class="text-xs black--text subheading justify">Políticas de cancelación de reservas:Para cualquier solicitud de anulación o cancelación de una reserva efectuada por el “beneficiario”, se entenderá que la reserva está anulada una vez que el departamento de reservas envíe la confirmación oficial de anulación vía correo electrónico con el código correspondiente para tal efecto. Cancelaciones sin código y email de respaldo no serán válidas. </span>
         <p></p>
@@ -150,14 +151,18 @@
         <span class="text-xs black--text subheading justify">Preguntas: Si tiene alguna pregunta sobre esta Política o sobre cómo el hotel Golden Cat   procesa su información personal, por favor contáctenos por correo electrónico a info@goldencat.com o llámenos al 724 2372 </span>
         <p></p>
         </v-card-text>
+        </v-card>
         <v-divider></v-divider>
+         <v-card dark tile flat color="green lighten-3">
         <v-card-actions>
+        <v-card dark tile flat color="#6e0505">
           <v-btn
             flat
             @click="agreement = false, dialog = false"
           >
             No
           </v-btn>
+          </v-card>
           <v-spacer></v-spacer>
           <v-btn
             class="white--text"
@@ -166,7 +171,9 @@
           >
             Acepto
           </v-btn>
+         
         </v-card-actions>
+          </v-card>
       </v-card>
     </v-dialog>
     </v-card>

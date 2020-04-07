@@ -3,7 +3,7 @@
     <v-layout row>
       <v-flex xs12 >
         <v-card dark tile flat color="error">
-          <v-img class="preguntasfrecuentes" :src="preguntasfrecuentes" ></v-img>
+        <v-img height="300px" width="1090px" margin="100px":src="preguntasfrecuentes" ></v-img>
         </v-card>
       </v-flex>
     </v-layout>
@@ -107,7 +107,7 @@
             </v-expansion-panel-content>
             <v-expansion-panel-content>
               <template v-slot:header>
-                <div>19. ¿Si la cancelación obedece a un caso de fuerza mayor que debo hacer?</div>
+                <div>10. ¿Si la cancelación obedece a un caso de fuerza mayor que debo hacer?</div>
               </template>
               <v-card>
               <v-card dark tile flat color="#02566e">

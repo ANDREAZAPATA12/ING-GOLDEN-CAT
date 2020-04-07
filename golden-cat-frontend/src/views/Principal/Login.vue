@@ -28,7 +28,9 @@
                 <v-spacer></v-spacer>
               </v-card-actions>
               <v-card-text class="text-xs-center">
+              <v-card dark tile flat color="#690d0d" >
                 <v-btn flat color="white" to="/restaurar_contraseña">Olvide mi contraseña</v-btn>
+                </v-card>
               </v-card-text>
             </v-card>
             </v-card>

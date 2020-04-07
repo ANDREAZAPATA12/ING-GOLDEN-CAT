@@ -83,6 +83,7 @@
           </template>
 
           <v-card>
+          <v-card dark tile flat color="#3c5f7a" >
             <v-card-title>
               <span class="headline">CONTRASEÑA USUARIO</span>
             </v-card-title>
@@ -100,13 +101,14 @@
                   </v-flex>
                 </v-layout>
               </v-container>
-              <small>*Campo Requerido</small>
-            </v-card-text>
-            <v-card-actions>
+              <h5 class="letra2 text-md- red--text"> *Campo Requerido</h5>
+             </v-card-text>
+             <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn color="blue darken-4" dark @click="dialogPassword = false">Salir</v-btn>
+              <v-btn color="red darken-4" dark @click="dialogPassword = false">Salir</v-btn>
               <v-btn color="blue darken-4" dark @click="dialogPassword = false">Guardar</v-btn>
             </v-card-actions>
+            </v-card>
           </v-card>
 
         </v-dialog>

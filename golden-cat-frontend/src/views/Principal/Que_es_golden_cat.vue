@@ -138,9 +138,9 @@
         <v-flex xs4>
           <v-container class="color5">
           <v-card tile flat color="transparent">
-            <h3 class="letra text-md-center" >LIBERTAD</h3>
-            <P>Aquí damos rienda suelta a tu imaginación haciendo realidad todo lo que
-              más has deseado para convertir tus vacaciones en una experiencia única e inolvidable.</P>
+            <h3 class="letra text-md-center" >INTIMIDAD</h3>
+            <P>Ofrecemos en medio de nuestros hermosos destinos una experiencia inolvidable que
+              hará vibrar todos tus sentidos a través de una atención casi personalizada.</P>
              <video width="300px" height="170px" src="@/assets/videos/Nuestros valores (Intimidad).mp4" controls></video>
           </v-card>
           </v-container>
@@ -148,9 +148,9 @@
          <v-flex xs4>
            <v-container class="color6">
            <v-card tile flat color="transparent">
-             <h3 class="letra text-md-center" >INTIMIDAD</h3>
-            <P>Ofrecemos en medio de nuestros hermosos destinos una experiencia inolvidable que
-              hará vibrar todos tus sentidos a través de una atención casi personalizada.</P>
+             <h3 class="letra text-md-center" >LIBERTAD</h3>
+            <P>Aquí damos rienda suelta a tu imaginación haciendo realidad todo lo que
+              más has deseado para convertir tus vacaciones en una experiencia única e inolvidable.</P>
             <video width="300px" height="170px" src="@/assets/videos/Nuestros valores (Libertad).mp4" controls></video>
             </v-card>
            </v-container>

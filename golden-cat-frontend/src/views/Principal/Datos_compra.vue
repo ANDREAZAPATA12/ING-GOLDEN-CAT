@@ -135,6 +135,7 @@
             </v-container>
           </v-card>
           <v-btn  color="green" @click="e1 = 2"> Continue</v-btn>
+        
           <v-btn  color="red" flat to="/" >CANCELAR</v-btn color="green" >
         </v-stepper-content>
 
