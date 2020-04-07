@@ -6,13 +6,14 @@
           <v-img class="imgcopas" :src="copas"></v-img>
         </v-card>
       </v-flex>
-    </v-layout>
-    <v-layout row>
+     </v-layout>
+     <v-layout row>
       <v-flex xs12 >
         <v-card dark tile flat color="transparent" >
           <h3 class="fueteEVENTOSYCELEBRACIONESENDEGOLDENCAT">EVENTOS Y CELEBRACIONES EN<br>GOLDENCAT</h3>
-          <p>El hotel Golden cat ofrece sus planes bajo diferentes modalidades para eventos y convenciones corporativas.</p>
-          <p>Nuestros Hoteles cuentan con habitaciones cómodamente dotadas y ofrecemos servicios adicionales de spa, restaurantes, bar abierto, piscina y mas.</p>
+          <p>Golden cat ofrece sus planes bajo diferentes modalidades para eventos y convenciones corporativas.</p>
+          <p>Nuestros Hoteles cuentan con habitaciones cómodamente dotadas y ofrecemos servicios adicionales de spa,
+          restaurantes, bar abierto, piscina y más.</p>
         </v-card>
       </v-flex>
     </v-layout>
@@ -21,18 +22,23 @@
         <v-container>
           <v-card>
             <v-img :src="familia"></v-img>
-            <v-card-title primary-title>
+             <template>
+             <v-card dark tile flat color="#b88c0b">
+            <v-card-title  primary-title >
               <div>
                 <h3 class="letraEVENTOS" >GRUPOS FAMILIARES</h3>
               </div>
             </v-card-title >
-            <v-dialog class="text-xs-center" v-model="dialogGRUPOSFAMILIARES" width="500" >
+           
+             
+            <v-dialog class="text-xs-center" v-model="dialogGRUPOSFAMILIARES"color="red" width="500" >
               <template v-slot:activator="{ on }">
                 <div class="text-xs-center">
-                  <v-btn  color="indigo darken-4" dark v-on="on" >Mas detalles</v-btn>
+                  <v-btn color="#0f7fab" dark v-on="on" >Mas detalles</v-btn>
                 </div>
               </template>
               <v-card>
+               <v-card dark tile flat color="#0c3d57">
                 <v-card-title class="headline " primary-title >GRUPOS FAMILIARES</v-card-title>
                 <v-card-text>Tenemos a tu disposición todos nuestros recursos para hacer que tu evento
                   sea algo único e inolvidable, al mejor estilo Golden cat con TODO INCLUIDO.
@@ -41,10 +47,13 @@
                 <v-divider></v-divider>
                 <v-container>
                   <v-spacer></v-spacer>
-                  <v-btn color="indigo darken-1 " flat @click="dialogGRUPOSFAMILIARES = false" >cerrar</v-btn>
+                  <v-btn color="red" flat @click="dialogGRUPOSFAMILIARES = false" >cerrar</v-btn>
                 </v-container>
+                </v-card>
               </v-card>
             </v-dialog>
+             </v-card>
+            </template>
           </v-card>
         </v-container>
       </v-flex>
@@ -52,6 +61,8 @@
         <v-container>
           <v-card>
             <v-img :src="pareja"></v-img>
+            <template>
+             <v-card dark tile flat color="#0bb5a4">
             <v-card-title primary-title>
               <div>
                 <h3 class="letraEVENTOS" >BODAS</h3>
@@ -60,10 +71,11 @@
             <v-dialog class="text-xs-center" v-model="dialogBODAS" width="500" >
               <template v-slot:activator="{ on }">
                 <div class="text-xs-center">
-                  <v-btn  color="indigo darken-4" dark v-on="on" >Mas detalles</v-btn>
+                  <v-btn  color="#0f7fab" dark v-on="on" >Mas detalles</v-btn>
                 </div>
               </template>
               <v-card>
+              <v-card dark tile flat color="#0c3d57">
                 <v-card-title class="headline " primary-title >BODAS</v-card-title>
                 <v-card-text>Disfruta el TODO INCLUIDO en Golden Cat
                   y haz que tu matrimonio sea inolvidable para ti y tus invitados.
@@ -72,10 +84,13 @@
                 <v-divider></v-divider>
                 <v-container>
                   <v-spacer></v-spacer>
-                  <v-btn color="indigo darken-1 " flat @click="dialogBODAS = false" >cerrar</v-btn>
+                  <v-btn color="red " flat @click="dialogBODAS = false" >cerrar</v-btn>
                 </v-container>
               </v-card>
+              </v-card>
             </v-dialog>
+                </v-card>
+            </template>
           </v-card>
         </v-container>
       </v-flex>
@@ -83,18 +98,22 @@
         <v-container>
           <v-card>
             <v-img :src="conferencia"></v-img>
+             <template>
+             <v-card dark tile flat color="#b88c0b">
             <v-card-title primary-title>
-              <div>
+                <div>
                 <h3 class="letraEVENTOS" >CONVENCIONES</h3>
               </div>
             </v-card-title >
             <v-dialog class="text-xs-center" v-model="dialogCONVENCIONES" width="500" >
               <template v-slot:activator="{ on }">
                 <div class="text-xs-center">
-                  <v-btn color="indigo darken-4" dark v-on="on" >Mas detalles</v-btn>
+                  <v-btn color="#0f7fab" dark v-on="on" >Mas detalles</v-btn>
                 </div>
               </template>
+
               <v-card>
+              <v-card dark tile flat color="#0c3d57">
                 <v-card-title class="headline " primary-title >CONVENCIONES</v-card-title>
                 <v-card-text>SERVICIO A LA MEDIDA <br>
                   * Diseño de gastronomía conceptual<br>
@@ -106,10 +125,13 @@
                 <v-divider></v-divider>
                 <v-container>
                   <v-spacer></v-spacer>
-                  <v-btn color="indigo darken-1 " flat @click="dialogCONVENCIONES = false" >cerrar</v-btn>
+                  <v-btn color="red " flat @click="dialogCONVENCIONES = false" >cerrar</v-btn>
                 </v-container>
               </v-card>
+                 </v-card>
             </v-dialog>
+             </v-card>
+            </template>
           </v-card>
         </v-container>
       </v-flex>

@@ -19,6 +19,7 @@ import TerminosCondiciones from './views/Principal/TerminosCondiciones.vue'
 import Eventos from './views/Principal/Eventos.vue'
 import AdministradorHabitaciones from './views/Administrador/AdministradorHabitaciones.vue'
 import CargarImagenes from './views/Administrador/CargarImagenes.vue'
+import Individual from './views/Principal/Individual.vue'
 
 Vue.use(Router)
 
@@ -120,6 +121,11 @@ export default new Router({
       path: '/administrador/CargarImagenes',
       name: 'CargarImagenes',
       component: CargarImagenes
+    },
+    {
+      path: '/Individual',
+      name: 'Individual',
+      component: Individual
     }
   ]
 })

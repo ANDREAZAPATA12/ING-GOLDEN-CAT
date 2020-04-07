@@ -1,13 +1,19 @@
 <template>
   <section>
-    <v-container class="barrabuscar green--text">
+     <v-card dark tile flat color="#0f7fab" >
+    <v-container class="barrabuscar #0bb5a4--text">
+       <v-card dark tile flat color="red" >
          <v-div class="hotelportada">
-
+             
+ <v-card dark tile flat color="green" >
       <v-container class="contenedor  text-xs-center" pa-2>
+       <v-card dark tile flat color="#0f7fab" >
 
         <v-layout   class=" justify-space-between row wrap  align-center">
          <v-flex xs12 sm6 md4 pb-0>
+      
          <VueHotelDatepicker class=" white--text"  placeholder="Fecha Inicio / Fecha Final" />
+           
           </v-flex>
           
           <v-flex xs12 sm6 md2>
@@ -30,9 +36,13 @@
             </v-radio-group>
           </v-flex>
         </v-layout>
+          </v-card>
       </v-container>
+           </v-card>
     </v-div>
+   </v-card>
     </v-container >
+ </v-card>
 
     <v-stepper   v-show="!reservaConfirm">
 
@@ -55,7 +65,7 @@
          <div class="containercss">
            <v-img height="166px" :src="HabitacionIndividual"></v-img>
             <div class="overlaycss">
-            <div class="textcss ">Habitacion Individual</div>
+            <div class="textcss ">Habitación Individual</div>
             </div>
           </div>
           </v-container>
@@ -68,7 +78,7 @@
          <div class="containercss">
            <v-img height="166px":src="HabitacionDoble"></v-img>
             <div class="overlaycss">
-            <div class="textcss ">Habitacion Doble</div>
+            <div class="textcss ">Habitación Doble</div>
             </div>
           </div>
           </v-container>
@@ -80,7 +90,7 @@
          <div class="containercss">
            <v-img class="imagecss" :src="HabitacionMatrimoniales"></v-img>
             <div class="overlaycss">
-            <div class="textcss ">Habitacion Matimonial</div>
+            <div class="textcss ">Habitación Matrimonial</div>
             </div>
           </div>
           </v-container>
@@ -92,7 +102,7 @@
          <div class="containercss">
            <v-img class="imagecss" :src="HabitacionSuite"></v-img>
             <div class="overlaycss">
-            <div class="textcss ">Habitacion Suite</div>
+            <div class="textcss ">Habitación Suite</div>
             </div>
           </div>
           </v-container>
@@ -118,7 +128,7 @@
                     <img :src="familia" alt = "Efecto CSS" >
                     <div class = "MainText" >
                         <div class = "SecText" >
-                          <h2>  <span id="GreenText">GRUPOS FAMILIARES </span> </h2>
+                          <h2>  <span id="#0bb5a4Text">GRUPOS FAMILIARES </span> </h2>
 
                         </div>
                     </div>
@@ -134,7 +144,7 @@
                   <div class = "MainImage" > <img :src = "pareja" alt = "Efecto CSS" >
                     <div class = "MainText" >
                         <div class = "SecText" >
-                          <h2>  <span id="GreenText" > BODAS </span> </h2>
+                          <h2>  <span id="white text" > BODAS </span> </h2>
 
                         </div>
                     </div>
@@ -150,7 +160,7 @@
                   <div class = "MainImage" > <img :src = "conferencia" alt = "Efecto CSS" >
                     <div class = "MainText" >
                         <div class = "SecText" >
-                          <h2>  <span id="GreenText" > CONVENCIONES </span> </h2>
+                          <h2>  <span id="letra2 text-md-center indigo--text " > CONVENCIONES </span> </h2>
 
                         </div>
                     </div>
@@ -161,15 +171,13 @@
         </v-flex>
       </v-layout>
     </v-stepper>
-   /*primera*/
 
     <v-container  v-show="reservaConfirm">
      <v-layout wrap justify-space-around row>
       <template v-for="n in 1">
-
-        <v-flex xs1 sm3 :key="n" mb-1 pa-2>
+ <v-flex xs1 sm3 :key="n" mb-1 pa-2>
           <v-hover>
-            <v-card class="mx-auto" slot-scope="{ hover }" color="green" max-width="600" >
+            <v-card class="mx-auto" slot-scope="{ hover }" color="#0bb5a4" max-width="600" >
               <v-img :aspect-ratio="16/9" :src="habitacion2">
                 <v-expand-transition>
                   <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  
@@ -179,7 +187,7 @@
                 </v-expand-transition>
               </v-img>
               <v-card-text  class="pt-4"  style="position: relative;">
-                <v-btn  absolute color="blue" class="white--text" fab  right top to="/Datos_Compra" >
+                <v-btn  absolute color="#0f7fab" class="white--text" fab  right top to="/Datos_Compra" >
                   <v-icon>local_grocery_store</v-icon>
                 </v-btn>
                 <v-layout row>
@@ -211,9 +219,10 @@
             </v-card>
            </v-hover>
            </v-flex>
+           
            <v-flex xs1 sm3 :key="n" mb-1 pa-2>
           <v-hover>
-            <v-card class="mx-auto" slot-scope="{ hover }" color="green" max-width="600" >
+            <v-card class="mx-auto" slot-scope="{ hover }" color="#0bb5a4" max-width="600" >
               <v-img :aspect-ratio="16/9" :src="habitacion2">
                 <v-expand-transition>
                   <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  
@@ -223,7 +232,7 @@
                 </v-expand-transition>
               </v-img>
               <v-card-text  class="pt-4"  style="position: relative;">
-                <v-btn  absolute color="blue" class="white--text" fab  right top to="/Datos_Compra" >
+                <v-btn  absolute color="#0f7fab" class="white--text" fab  right top to="/Datos_Compra" >
                   <v-icon>local_grocery_store</v-icon>
                 </v-btn>
                 <v-layout row>
@@ -257,7 +266,7 @@
            </v-flex>
              <v-flex xs1 sm3 :key="n" mb-1 pa-2>
           <v-hover>
-            <v-card class="mx-auto" slot-scope="{ hover }" color="green" max-width="600" >
+            <v-card class="mx-auto" slot-scope="{ hover }" color="#0bb5a4" max-width="600" >
               <v-img :aspect-ratio="16/9" :src="habitacion2">
                 <v-expand-transition>
                   <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  
@@ -267,7 +276,7 @@
                 </v-expand-transition>
               </v-img>
               <v-card-text  class="pt-4"  style="position: relative;">
-                <v-btn  absolute color="blue" class="white--text" fab  right top to="/Datos_Compra" >
+                <v-btn  absolute color="#0f7fab" class="white--text" fab  right top to="/Datos_Compra" >
                   <v-icon>local_grocery_store</v-icon>
                 </v-btn>
                 <v-layout row>
@@ -301,7 +310,7 @@
            </v-flex>
              <v-flex xs1 sm3 :key="n" mb-1 pa-2>
           <v-hover>
-            <v-card class="mx-auto" slot-scope="{ hover }" color="green" max-width="600" >
+            <v-card class="mx-auto" slot-scope="{ hover }" color="#0bb5a4" max-width="600" >
               <v-img :aspect-ratio="16/9" :src="habitacion2">
                 <v-expand-transition>
                   <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  
@@ -311,7 +320,7 @@
                 </v-expand-transition>
               </v-img>
               <v-card-text  class="pt-4"  style="position: relative;">
-                <v-btn  absolute color="blue" class="white--text" fab  right top to="/Datos_Compra" >
+                <v-btn  absolute color="#0f7fab" class="white--text" fab  right top to="/Datos_Compra" >
                   <v-icon>local_grocery_store</v-icon>
                 </v-btn>
                 <v-layout row>
@@ -345,7 +354,7 @@
            </v-flex>
              <v-flex xs1 sm3 :key="n" mb-1 pa-2>
           <v-hover>
-            <v-card class="mx-auto" slot-scope="{ hover }" color="green" max-width="600" >
+            <v-card class="mx-auto" slot-scope="{ hover }" color="#0bb5a4" max-width="600" >
               <v-img :aspect-ratio="16/9" :src="habitacion2">
                 <v-expand-transition>
                   <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  
@@ -355,7 +364,7 @@
                 </v-expand-transition>
               </v-img>
               <v-card-text  class="pt-4"  style="position: relative;">
-                <v-btn  absolute color="blue" class="white--text" fab  right top to="/Datos_Compra" >
+                <v-btn  absolute color="#0f7fab" class="white--text" fab  right top to="/Datos_Compra" >
                   <v-icon>local_grocery_store</v-icon>
                 </v-btn>
                 <v-layout row>
@@ -389,7 +398,7 @@
            </v-flex>
              <v-flex xs1 sm3 :key="n" mb-1 pa-2>
           <v-hover>
-            <v-card class="mx-auto" slot-scope="{ hover }" color="green" max-width="600" >
+            <v-card class="mx-auto" slot-scope="{ hover }" color="#0bb5a4" max-width="600" >
               <v-img :aspect-ratio="16/9" :src="habitacion2">
                 <v-expand-transition>
                   <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  
@@ -399,7 +408,7 @@
                 </v-expand-transition>
               </v-img>
               <v-card-text  class="pt-4"  style="position: relative;">
-                <v-btn  absolute color="blue" class="white--text" fab  right top to="/Datos_Compra" >
+                <v-btn  absolute color="#0f7fab" class="white--text" fab  right top to="/Datos_Compra" >
                   <v-icon>local_grocery_store</v-icon>
                 </v-btn>
                 <v-layout row>
@@ -433,7 +442,7 @@
            </v-flex>
              <v-flex xs1 sm3 :key="n" mb-1 pa-2>
           <v-hover>
-            <v-card class="mx-auto" slot-scope="{ hover }" color="green" max-width="600" >
+            <v-card class="mx-auto" slot-scope="{ hover }" color="#0bb5a4" max-width="600" >
               <v-img :aspect-ratio="16/9" :src="habitacion2">
                 <v-expand-transition>
                   <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  
@@ -443,7 +452,7 @@
                 </v-expand-transition>
               </v-img>
               <v-card-text  class="pt-4"  style="position: relative;">
-                <v-btn  absolute color="blue" class="white--text" fab  right top to="/Datos_Compra" >
+                <v-btn  absolute color="#0f7fab" class="white--text" fab  right top to="/Datos_Compra" >
                   <v-icon>local_grocery_store</v-icon>
                 </v-btn>
                 <v-layout row>
@@ -477,7 +486,7 @@
            </v-flex>
              <v-flex xs1 sm3 :key="n" mb-1 pa-2>
           <v-hover>
-            <v-card class="mx-auto" slot-scope="{ hover }" color="green" max-width="600" >
+            <v-card class="mx-auto" slot-scope="{ hover }" color="#0bb5a4" max-width="600" >
               <v-img :aspect-ratio="16/9" :src="habitacion2">
                 <v-expand-transition>
                   <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  
@@ -487,7 +496,7 @@
                 </v-expand-transition>
               </v-img>
               <v-card-text  class="pt-4"  style="position: relative;">
-                <v-btn  absolute color="blue" class="white--text" fab  right top to="/Datos_Compra" >
+                <v-btn  absolute color="#0f7fab" class="white--text" fab  right top to="/Datos_Compra" >
                   <v-icon>local_grocery_store</v-icon>
                 </v-btn>
                 <v-layout row>
@@ -521,7 +530,7 @@
            </v-flex>
              <v-flex xs1 sm3 :key="n" mb-1 pa-2>
           <v-hover>
-            <v-card class="mx-auto" slot-scope="{ hover }" color="green" max-width="600" >
+            <v-card class="mx-auto" slot-scope="{ hover }" color="#0bb5a4" max-width="600" >
               <v-img :aspect-ratio="16/9" :src="habitacion2">
                 <v-expand-transition>
                   <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  
@@ -531,7 +540,7 @@
                 </v-expand-transition>
               </v-img>
               <v-card-text  class="pt-4"  style="position: relative;">
-                <v-btn  absolute color="blue" class="white--text" fab  right top to="/Datos_Compra" >
+                <v-btn  absolute color="#0f7fab" class="white--text" fab  right top to="/Datos_Compra" >
                   <v-icon>local_grocery_store</v-icon>
                 </v-btn>
                 <v-layout row>
@@ -565,7 +574,7 @@
            </v-flex>
              <v-flex xs1 sm3 :key="n" mb-1 pa-2>
           <v-hover>
-            <v-card class="mx-auto" slot-scope="{ hover }" color="green" max-width="600" >
+            <v-card class="mx-auto" slot-scope="{ hover }" color="#0bb5a4" max-width="600" >
               <v-img :aspect-ratio="16/9" :src="habitacion2">
                 <v-expand-transition>
                   <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  
@@ -575,7 +584,7 @@
                 </v-expand-transition>
               </v-img>
               <v-card-text  class="pt-4"  style="position: relative;">
-                <v-btn  absolute color="blue" class="white--text" fab  right top to="/Datos_Compra" >
+                <v-btn  absolute color="#0f7fab" class="white--text" fab  right top to="/Datos_Compra" >
                   <v-icon>local_grocery_store</v-icon>
                 </v-btn>
                 <v-layout row>
@@ -609,7 +618,7 @@
            </v-flex>
              <v-flex xs1 sm3 :key="n" mb-1 pa-2>
           <v-hover>
-            <v-card class="mx-auto" slot-scope="{ hover }" color="green" max-width="600" >
+            <v-card class="mx-auto" slot-scope="{ hover }" color="#0bb5a4" max-width="600" >
               <v-img :aspect-ratio="16/9" :src="habitacion2">
                 <v-expand-transition>
                   <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  
@@ -619,7 +628,7 @@
                 </v-expand-transition>
               </v-img>
               <v-card-text  class="pt-4"  style="position: relative;">
-                <v-btn  absolute color="blue" class="white--text" fab  right top to="/Datos_Compra" >
+                <v-btn  absolute color="#0f7fab" class="white--text" fab  right top to="/Datos_Compra" >
                   <v-icon>local_grocery_store</v-icon>
                 </v-btn>
                 <v-layout row>
@@ -653,7 +662,7 @@
            </v-flex>
              <v-flex xs1 sm3 :key="n" mb-1 pa-2>
           <v-hover>
-            <v-card class="mx-auto" slot-scope="{ hover }" color="green" max-width="600" >
+            <v-card class="mx-auto" slot-scope="{ hover }" color="#0bb5a4" max-width="600" >
               <v-img :aspect-ratio="16/9" :src="habitacion2">
                 <v-expand-transition>
                   <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  
@@ -663,7 +672,7 @@
                 </v-expand-transition>
               </v-img>
               <v-card-text  class="pt-4"  style="position: relative;">
-                <v-btn  absolute color="blue" class="white--text" fab  right top to="/Datos_Compra" >
+                <v-btn  absolute color="#0f7fab" class="white--text" fab  right top to="/Datos_Compra" >
                   <v-icon>local_grocery_store</v-icon>
                 </v-btn>
                 <v-layout row>
@@ -840,7 +849,7 @@ width: 100%;
   font-size: 25px;
 }
 
-.SecText h2 #GreenText {
+.SecText h2 ##0bb5a4Text {
   color: rgb(162, 164, 182);
   padding-bottom: 3px;
   border-bottom: 2px solid #fff;

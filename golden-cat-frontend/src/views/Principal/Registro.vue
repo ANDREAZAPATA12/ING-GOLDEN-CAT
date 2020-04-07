@@ -39,18 +39,18 @@
 
                 <v-toolbar-title class="font-weight-medium white--text display-1">Registro</v-toolbar-title>
                 </v-toolbar>
-                  <v-card-text class="contenedor">
+                  <v-card-text color="red" class="contenedor" >
                 <v-form class="black--text">
-          <v-text-field
-           v-model="Name" color="blue darken-4"
-           label="Nombre"
-        ></v-text-field>
-        <v-text-field
-           v-model="LastName" color="blue darken-4"
-           label="Apellido"
-        ></v-text-field>
+                <v-text-field
+                 v-model="Name" color="white"
+                 label="Nombre"
+                 ></v-text-field>
+                 <v-text-field
+                 v-model="LastName" color="white"
+                 label="Apellido"
+               ></v-text-field>
          <v-text-field
-           v-model="email" color="blue darken-4"
+           v-model="email" color="white"
            label="Correo electrónico"
            :error-messages="emailError"
             @input="$v.email.$touch()"
@@ -58,17 +58,17 @@
         ></v-text-field>
         <v-text-field
            v-model="Phone"
-           color="blue darken-4"
-           label="Telefono"
+           color="white"
+           label="Teléfono"
         ></v-text-field>
         <v-text-field
            v-model="Identification"
-           color="blue darken-4"
-           label="Identificacion"
+           color="white"
+           label="Identificación"
         ></v-text-field>
         <v-text-field
               v-model="password"
-              color="blue darken-4"
+              color="white"
               label="Contraseña"
               :error-messages="passErrors"
               @input="$v.password.$touch()"
@@ -83,7 +83,7 @@
                 :error-messages="matchPass"
                 @input="$v.repeatPassword.$touch()"
                 @blur="$v.repeatPassword.$touch()"
-                color="blue darken-4"
+                color="white"
                 label="Confirmar contraseña"
                 :type="show2 ? 'text' : 'password'"
                 :append-icon="show2 ? 'visibility' : 'visibility_off'"
