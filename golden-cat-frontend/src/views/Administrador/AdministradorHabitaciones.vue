@@ -1,9 +1,12 @@
 <template>
-     <div class="todooo">
+     <div class="red">
+      <v-card dark tile flat color="#3e968b" >
       <br><br>
+     
    <v-subheader class="subheader black--text display-1 font-weight-bold ">Habitaciones</v-subheader>
     <v-form>
       <v-container>
+        
         <v-layout row wrap>
           <v-flex xs12 sm4>
             <v-text-field
@@ -92,8 +95,10 @@
           <v-btn color="red darken-1" class="botones white--text headline" >Cancelar</v-btn>
         </v-flex>
         </v-layout>
+         
       </v-container>
-    </v-form>
+      </v-form>
+     </v-card>
      <v-toolbar flat color="white">
       <v-spacer></v-spacer>
       <v-dialog v-model="dialog" max-width="500px">

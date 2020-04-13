@@ -195,7 +195,7 @@
                     <v-card-text  class="margen text-sm-left">tipo de habitacion</v-card-text>
                   </v-flex>
                   <v-flex xs6>
-                    <v-card-text  class="margen " >sencilla
+                    <v-card-text  class="margen " >Doble
                     </v-card-text>
                   </v-flex>
                 </v-layout>
@@ -372,7 +372,7 @@
                     <v-card-text  class="margen text-sm-left">tipo de habitacion</v-card-text>
                   </v-flex>
                   <v-flex xs6>
-                    <v-card-text  class="margen " >sencilla
+                    <v-card-text  class="margen " >Doble
                     </v-card-text>
                   </v-flex>
                 </v-layout>

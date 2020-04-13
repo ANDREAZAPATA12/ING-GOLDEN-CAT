@@ -1,16 +1,10 @@
 <template>
   <div id="app">
     <v-app id="inspire">
-      <v-navigation-drawer
-        fixed
-        :clipped="$vuetify.breakpoint.mdAndUp"
-        app
-        v-model="drawer"
-        width="250"
-        class="blue"
-      >
+      <v-navigation-drawer fixed
+        :clipped="$vuetify.breakpoint.mdAndUp" app v-model="drawer" width="250" class="green lighten-4">
         <link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet">
-        <v-list dense style="color: white;">
+        <v-list dense style="color: black;">
           <template v-for="item in items">
             <v-layout
               row
@@ -70,7 +64,7 @@
         </v-list>
       </v-navigation-drawer>
         <v-toolbar
-        color="#448c8a"
+        color="#01579B"
         dark
         app
         :clipped-left="$vuetify.breakpoint.mdAndUp"
@@ -91,7 +85,7 @@
           >
             <template v-slot:activator="{ on }">
               <v-btn
-                color="#061A00
+                color="#0a6e2b
                 "
                 dark
                 v-on="on"
@@ -240,6 +234,6 @@ export default {
       padding-top: 20px;
     }
      .v-content{
-     background-color: rgb(201, 26, 26)
+     background-color: rgb(1, 46, 82)
     }
 </style>
