@@ -20,6 +20,9 @@ export default new Vuex.Store({
     SET_USER (state, newVal) {
       state.user = newVal
     },
+    SET_ROOM (state, newVal) {
+      state.room = newVal
+    },
   
   },
   actions: {

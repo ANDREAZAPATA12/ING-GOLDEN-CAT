@@ -34,7 +34,7 @@
            <v-flex d-flex xs12 sm12 md3>
            </v-flex>
           <v-flex d-flex xs12 sm12 md6>
-            <v-card class="elevation-12">
+            <v-card class="blue">
                <v-toolbar color="indigo darken-4" height="150">
 
                 <v-toolbar-title class="font-weight-medium white--text display-1">Registro</v-toolbar-title>

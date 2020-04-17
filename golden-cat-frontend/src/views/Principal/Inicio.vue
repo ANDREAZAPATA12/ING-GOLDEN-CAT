@@ -1,19 +1,17 @@
 <template>
   <section>
-     <v-card dark tile flat color="#0f7fab" >
+     <v-card dark tile flat color="#b88c0b" >
     <v-container class="barrabuscar #0bb5a4--text">
        <v-card dark tile flat color="red" >
          <v-div class="hotelportada">
              
  <v-card dark tile flat color="green" >
-      <v-container class="contenedor  text-xs-center" pa-2>
-       <v-card dark tile flat color="#0f7fab" >
+      <v-container class="contenedor text-xs-center" pa-1>
+       <v-card dark tile flat color="#b88c0b" >
 
         <v-layout   class=" justify-space-between row wrap  align-center">
-         <v-flex xs12 sm6 md4 pb-0>
-      
-         <VueHotelDatepicker class=" white--text"  placeholder="Fecha Inicio / Fecha Final" />
-           
+         <v-flex xs12 sm6 md4 pb-0 >
+               <VueHotelDatepicker class="pink li"   placeholder="Fecha Inicio / Fecha Final" />
           </v-flex>
           
           <v-flex xs12 sm6 md2>
@@ -48,7 +46,7 @@
 
       <v-layout row >
         <v-flex xs12 >
-          <v-card dark tile flat color="#6e0505" >
+          <v-card dark tile flat color="blue lighten -1" >
 
               <h3 class="letra2 text-md-center white--text  "  >La Mejor Opcion Para Ti y Tu familia</h3>
              <v-container>
@@ -112,7 +110,7 @@
 
       <v-layout row>
         <v-flex xs12 >
-          <v-card dark tile flat color="#6e0505">
+          <v-card dark tile flat color="blue lighten -1">
             <v-card-text>
                <v-img class="imagen1"  :src="portadahotel" ></v-img>
             </v-card-text>
@@ -138,7 +136,7 @@
           </v-card>
         </v-flex>
         <v-flex xs12 sm6 md4 >
-          <v-card dark tile flat color="#6e0505">
+          <v-card dark tile flat color="blue lighten -1">
             <v-card-text class="MainImage1">
               <div class = "Container" >
                   <div class = "MainImage" > <img :src = "pareja" alt = "Efecto CSS" >

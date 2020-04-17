@@ -1,6 +1,6 @@
 <template>
   <section>
-    <v-stepper  v-model="e1" v-show="!reservaConfirm">
+    <v-stepper class="blue" v-model="e1" v-show="!reservaConfirm">
       <v-stepper-header>
         <v-stepper-step :complete="e1 > 1" step="1"  color="#eddc1c" >Datos reserva</v-stepper-step>
         <v-divider></v-divider>
@@ -63,7 +63,7 @@
                         </v-flex>
                         <v-flex xs4>
                          <v-card dark tile flat color="#0c3d57" >
-                          <v-card-text class=" font-weight-light text-sm-left .headline" >2</v-card-text>
+                          <v-card-text class=" font-weight-light text-sm-left .headline" >{{ room.number_max}</v-card-text>
                              </v-card>
                         </v-flex>
                       </v-layout>
@@ -155,7 +155,7 @@
               <v-flex  xs12 sm6 md3 order-md2 order-sm1 >
                 <v-card dark tile flat >
                  <v-card dark tile flat color="#0c3d57" >
-                  <v-text-field  small label="Nombre" solo ></v-text-field >
+                 <v-text-field small label="" solo v-model="user.name"></v-text-field>
                 </v-card>
                 </v-card>
               </v-flex>
@@ -169,7 +169,7 @@
               <v-flex xs12 sm6 md3 order-md4 order-sm3>
                 <v-card dark tile flat >
                 <v-card dark tile flat color="#0c3d57" >
-                  <v-text-field small class="text-sm-left" label="Apellido" solo ></v-text-field>
+                  <v-text-field small class="text-sm-left" label="" solo v-model="user.lastName" ></v-text-field>
                 </v-card>
                  </v-card>
               </v-flex>
@@ -185,7 +185,7 @@
               <v-flex xs12 sm6 md3 order-md2 order-sm1>
                 <v-card dark tile flat >
                 <v-card dark tile flat color="#0c3d57" >
-                  <v-text-field small label="cc" solo ></v-text-field>
+                  <v-text-field small label="" solo v-model="user.identification" ></v-text-field>
                 </v-card>
                 </v-card>
               </v-flex>
@@ -199,7 +199,7 @@
               <v-flex xs12 sm6 md3 order-md4 order-sm3>
                 <v-card dark tile flat>
                  <v-card dark tile flat color="#0c3d57" >
-                  <v-text-field small label="telefono" solo ></v-text-field>
+                  <v-text-field small label="" phone solo  v-model="user.phone" ></v-text-field>
                 </v-card>
                  </v-card>
               </v-flex>
@@ -215,7 +215,7 @@
               <v-flex xs12 sm6 md3 order-md2 order-sm1>
                 <v-card dark tile flat color="#0c3d57" >
                
-                  <v-text-field small label="correo electronico" solo ></v-text-field>
+                  <v-text-field small label="" solo v-model="user.email" ></v-text-field>
             
                   </v-card>
               </v-flex>
@@ -229,7 +229,7 @@
               <v-flex xs12 sm6 md3 order-md4 order-sm3>
                 <v-card dark tile flat >
                      <v-card dark tile flat color="#0c3d57" >
-                  <v-text-field small label="ciudad" solo ></v-text-field>
+                  <v-text-field small label="" solo v-model="user.city"</v-text-field>
                 </v-card>
                 </v-card>
               </v-flex>
@@ -407,61 +407,182 @@
     </v-stepper>
 
     <v-container v-show="reservaConfirm">
-      <v-layout>
-        <v-flex xs12>
-          <v-card tile flat color="transparent">
-            <v-card-text class="display-2 text-xs-center"></v-card-text>
+    <v-card class="mb-5" color="#0c3d57"  height="500px" width="1100px">
+     <v-layout row wrap>
+              <v-flex xs12 sm6 md3 order-md1 order-sm2>
+                <v-card dark tile flat >
+                <v-card dark tile flat color="#0c3d57" >
+                  <v-card-text class="text-lg-right"> NOMBRE :</v-card-text>
+                </v-card>
+                </v-card>
+              </v-flex>
+              <v-flex xs12 sm6 md3 order-md2 order-sm1>
+                <v-card dark tile flat >
+                <v-card dark tile flat color="#0c3d57" >
+                  <v-text-field  small label="" solo v-model="user.name"></v-text-field>
+                </v-card>
+                </v-card>
+              </v-flex>
+              <v-flex xs12 sm6 md3 order-md3 order-sm4>
+                <v-card dark tile flat >
+                 <v-card dark tile flat color="#0c3d57" >
+                  <v-card-text >APELLIDO :</v-card-text>
+                </v-card>
+                 </v-card>
+              </v-flex>
+              <v-flex xs12 sm6 md3 order-md4 order-sm3>
+                <v-card dark tile flat>
+                 <v-card dark tile flat color="#0c3d57" >
+                  <v-text-field small label="" solo v-model="user.lastName" ></v-text-field>
+                </v-card>
+                 </v-card>
+              </v-flex>
+            </v-layout>
+            <v-layout row wrap>
+              <v-flex xs12 sm6 md3 order-md1 order-sm2>
+                <v-card dark tile flat >
+                <v-card dark tile flat color="#0c3d57" >
+                  <v-card-text class="text-lg-right"> TIPO HABITACION :</v-card-text>
+                </v-card>
+                </v-card>
+              </v-flex>
+              <v-flex xs12 sm6 md3 order-md2 order-sm1>
+                <v-card dark tile flat >
+                <v-card dark tile flat color="#0c3d57" >
+                  <v-text-field small label="numero de personas" solo  ></v-text-field>
+                </v-card>
+                </v-card>
+              </v-flex>
+              <v-flex xs12 sm6 md3 order-md3 order-sm4>
+                <v-card dark tile flat >
+                 <v-card dark tile flat color="#0c3d57" >
+                  <v-card-text >NUMERO DE PERSONAS :</v-card-text>
+                </v-card>
+                 </v-card>
+              </v-flex>
+              <v-flex xs12 sm6 md3 order-md4 order-sm3>
+                <v-card dark tile flat>
+                 <v-card dark tile flat color="#0c3d57" >
+                  <v-text-field small label="numero de personas" solo ></v-text-field>
+                </v-card>
+                 </v-card>
+              </v-flex>
+            </v-layout>
+             <v-layout row wrap>
+              <v-flex xs12 sm6 md3 order-md1 order-sm2>
+                <v-card dark tile flat >
+                <v-card dark tile flat color="#0c3d57" >
+                  <v-card-text class="text-lg-right"> CC :</v-card-text>
+                </v-card>
+                </v-card>
+              </v-flex>
+              <v-flex xs12 sm6 md3 order-md2 order-sm1>
+                <v-card dark tile flat >
+                <v-card dark tile flat color="#0c3d57" >
+                  <v-text-field small label="" solo v-model="user.identification" ></v-text-field>
+                </v-card>
+                </v-card>
+              </v-flex>
+              <v-flex xs12 sm6 md3 order-md3 order-sm4>
+                <v-card dark tile flat >
+                 <v-card dark tile flat color="#0c3d57" >
+                  <v-card-text >TELEFONO :</v-card-text>
+                </v-card>
+                 </v-card>
+              </v-flex>
+              <v-flex xs12 sm6 md3 order-md4 order-sm3>
+                <v-card dark tile flat>
+                 <v-card dark tile flat color="#0c3d57" >
+                  <v-text-field small label="" phone solo  v-model="user.phone" ></v-text-field>
+                </v-card>
+                 </v-card>
+              </v-flex>
+            </v-layout>
+           
+            <v-layout row wrap>
+              <v-flex xs12 sm6 md3 order-md1 order-sm2>
+                <v-card dark tile flat >
+                <v-card dark tile flat color="#0c3d57" >
+                  <v-card-text class="text-lg-right"> FECHA INICIO:</v-card-text>
+                </v-card>
+                </v-card>
+              </v-flex>
+              <v-flex xs12 sm6 md3 order-md2 order-sm1>
+                <v-card dark tile flat >
+                <v-card dark tile flat color="#0c3d57" >
+                  <v-text-field small label="Fecha inicio" solo ></v-text-field>
+                </v-card>
+                </v-card>
+              </v-flex>
+              <v-flex xs12 sm6 md3 order-md3 order-sm4>
+                <v-card dark tile flat >
+                 <v-card dark tile flat color="#0c3d57" >
+                  <v-card-text >FECHA FINAL:</v-card-text>
+                </v-card>
+                 </v-card>
+              </v-flex>
+              <v-flex xs12 sm6 md3 order-md4 order-sm3>
+                <v-card dark tile flat>
+                 <v-card dark tile flat color="#0c3d57" >
+                  <v-text-field small label="fecha final" solo ></v-text-field>
+                </v-card>
+                 </v-card>
+              </v-flex>
+            </v-layout>
+              <v-layout row wrap>
+              <v-flex xs12 sm6 md3 order-md1 order-sm2>
+                <v-card dark tile flat >
+                <v-card dark tile flat color="#0c3d57" >
+                  <v-card-text class="text-lg-right">CORREO ELECTRONICO :</v-card-text>
+                </v-card>
+                  </v-card>
+              </v-flex>
+              <v-flex xs12 sm6 md3 order-md2 order-sm1>
+                <v-card dark tile flat color="#0c3d57" >
+               
+                  <v-text-field small label="" solo v-model="user.email" ></v-text-field>
+            
+                  </v-card>
+              </v-flex>
+              <v-flex xs12 sm6 md3 order-md3 order-sm4>
+                <v-card dark tile flat >
+                   <v-card dark tile flat color="#0c3d57" >
+                  <v-card-text >CIUDAD :</v-card-text>
+                </v-card>
+                </v-card>
+              </v-flex>
+              <v-flex xs12 sm6 md3 order-md4 order-sm3>
+                <v-card dark tile flat >
+                     <v-card dark tile flat color="#0c3d57" >
+                  <v-text-field small label="" solo v-model="user.city" ></v-text-field>
+                </v-card>
+                </v-card>
+                 <v-card-text class="display-2" >PRECIO: </v-card-text>
+                            
+              </v-flex>
+            </v-layout>
           </v-card>
-        </v-flex>
-      </v-layout>
-      <v-layout row>
-        <v-flex xs3 >
-          <v-card  tile flat color="transparent">
-              <v-card-text >TIPO DE HABITACION:</v-card-text>
-              <v-card-text >FECHA INICIO DE RESERVA:</v-card-text>
-              <v-card-text >FECHA FINAL DE RESERVA:</v-card-text>
-              <v-card-text >NUMERO DE ADULTOS:</v-card-text>
-              <v-card-text >NUMERO DE NIÑOS:</v-card-text>
-              <v-btn color="red" to="/" dark >salir</v-btn>
-          </v-card>
-        </v-flex>
-        <v-flex xs3 >
-          <v-card  tile flat color="transparent">
-            <v-card-text >DOBLE</v-card-text>
-            <v-card-text >12/5/2019</v-card-text>
-            <v-card-text >15/5/2019</v-card-text>
-            <v-card-text >2</v-card-text>
-            <v-card-text >2</v-card-text>
-          </v-card>
-        </v-flex>
-        <v-flex xs3 >
-          <v-card  tile flat color="transparent">
-            <v-card-text >NOMBRE :</v-card-text>
-            <v-card-text >APELLIDO :</v-card-text>
-            <v-card-text >TELEFONO :</v-card-text>
-            <v-card-text >CC :</v-card-text>
-            <v-card-text >CIUDAD :</v-card-text>
-            <v-card-text class="display-2" >PRECIO:</v-card-text>
-          </v-card>
-        </v-flex>
-        <v-flex xs3 >
-          <v-card  tile flat color="transparent">
-            <v-card-text >CARLOS</v-card-text>
-            <v-card-text >VERA</v-card-text>
-            <v-card-text >3205458545</v-card-text>
-            <v-card-text >1100975458</v-card-text>
-            <v-card-text >CUCUTA</v-card-text>
-            <v-card-text class="display-2" >$10000</v-card-text>
-          </v-card>
-        </v-flex>
-      </v-layout>
+          <v-btn color="red" to="/" dark >salir</v-btn>
+               </v-card>
     </v-container>
   </section>
 </template>
 <script>
 import HABITACION2 from '@/assets/habitacion2.png'
+import { mapState } from 'vuex'
+import uuid from 'uuid/v4'
+import api from '@/plugins/api'
 export default {
   name: 'datos compra',
+  computed: {
+    ...mapState(['user'])
+  },
+
+  created () {
+    this.getroom()
+  },
+  
+   name: 'principal-layout',
   data: () => ({
     reservaConfirm: false,
     habitacion2: HABITACION2,

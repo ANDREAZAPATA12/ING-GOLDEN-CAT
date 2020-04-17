@@ -15,9 +15,7 @@
         <v-btn small flat  dark left to= "/servicios">Servicios extra
           <v-icon small>bookmarks</v-icon>
         </v-btn>
-        <v-btn small flat  dark left to="/contactanos">Contactanos
-          <v-icon small>email</v-icon>
-        </v-btn>
+        
         <v-btn small flat  dark left to="Que_es_golden_cat">¿que es golden cat?
           <v-icon small>help</v-icon>
         </v-btn>
@@ -234,6 +232,6 @@ export default {
   z-index: 5;
 }
  .v-content{
-     background-color: rgb(1, 46, 82)
+     background-color: rgb(193, 225, 245)
     }
 </style>

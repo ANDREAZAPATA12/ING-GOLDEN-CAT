@@ -5,7 +5,7 @@
        <v-card dark tile flat color="red" >
          <v-div class="hotelportada">
              
- <v-card dark tile flat color="white" >
+ <v-card dark tile flat color="green" >
       <v-container class="contenedor  text-xs-center" pa-2>
        <v-card dark tile flat color="#0f7fab" >
 
@@ -54,7 +54,7 @@
       <template v-for="n in 1">
  <v-flex xs1 sm3 :key="n" mb-1 pa-2>
           <v-hover>
-            <v-card class="mx-auto" slot-scope="{ hover }" color="#0bb5a4" max-width="600" >
+            <v-card class="mx-auto" slot-scope="{ hover }" color="red" max-width="600" >
               <v-img :aspect-ratio="16/9" :src="habitacion2">
                 <v-expand-transition>
                   <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  

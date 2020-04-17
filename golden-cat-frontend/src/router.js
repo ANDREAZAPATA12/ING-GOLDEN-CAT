@@ -20,6 +20,9 @@ import Eventos from './views/Principal/Eventos.vue'
 import AdministradorHabitaciones from './views/Administrador/AdministradorHabitaciones.vue'
 import CargarImagenes from './views/Administrador/CargarImagenes.vue'
 import Individual from './views/Principal/Individual.vue'
+import Doble from './views/Principal/Doble.vue'
+import Suite from './views/Principal/Suite.vue'
+import Matrimonial from './views/Principal/Matrimonial.vue'
 
 Vue.use(Router)
 
@@ -126,6 +129,21 @@ export default new Router({
       path: '/Individual',
       name: 'Individual',
       component: Individual
+    },
+    {
+      path: '/Doble',
+      name: 'Doble',
+      component: Doble
+    },
+    {
+      path: '/Suite',
+      name: 'Suite',
+      component: Suite
+    },
+    {
+      path: '/Matrimonial',
+      name: 'Matrimonial',
+      component: Matrimonial
     }
   ]
 })
