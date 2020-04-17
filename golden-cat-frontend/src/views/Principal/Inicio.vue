@@ -15,7 +15,7 @@
           </v-flex>
           
           <v-flex xs12 sm6 md2>
-            <v-select :items="itemsnumeroadultos"  color="white" label="Numero de adultos"></v-select>
+            <v-select :items="itemsnumeroadultos"  color="black" label="Numero de adultos"></v-select>
           </v-flex>
           <v-flex xs12 sm6 md2>
               <v-select :items="itemsnumeroniños" color="white" label="Numero de niños"></v-select>
