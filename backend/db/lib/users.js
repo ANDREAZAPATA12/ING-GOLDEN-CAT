@@ -39,7 +39,7 @@ function setupUser (userModel) {
     if (!(password.compareHash(credential.password, user.password))){
       return {
         login: false,
-        message: 'Contraseña Incorrecta'
+        message:  'Contraseña Incorrecta'
       }
     }
     return{
