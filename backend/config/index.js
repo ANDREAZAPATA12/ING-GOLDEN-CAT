@@ -6,7 +6,7 @@ const config = {
   db: {
     database: process.env.DB_NAME || "golden",
     username: process.env.DB_USER || "golden",
-    password: process.env.DB_PASS || "golden123",
+    password: process.env.DB_PASS || "golden1234",
     host: process.env.DB_HOST || "localhost",
     dialect: "mysql",
     pool: {
