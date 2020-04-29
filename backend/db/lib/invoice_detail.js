@@ -13,7 +13,7 @@ function setupInvoice_detail(invoice_detailModel) {
       async function updateInvoiceDetail(uuid, invoice_detail) {
       const cond = { where: { uuid } }
       const result = await invoice_detailModel.update(invoice_detail, cond)
-      return result ? invoice_detailModel.findOne(cond) : new Error('no se actualizo ninguna tarifa')
+      return result ? invoice_detailModel.findOne(cond) : new Error('No se actualizo ninguna tarifa')
       }
       function findAllInvoiceDetail() {
         return invoice_detailModel.findAll()

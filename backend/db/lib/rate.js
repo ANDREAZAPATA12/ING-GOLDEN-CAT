@@ -14,7 +14,7 @@ function setupRate(rateModel) {
       async function updateRate(uuid, rate) {
       const cond = { where: { uuid } }
       const result = await rateModel.update(rate, cond)
-      return result ? rateModel.findOne(cond) : new Error('no se actualizo ninguna tarifa')
+      return result ? rateModel.findOne(cond) : new Error('No se actualizo ninguna tarifa')
       }
       function findAllRate() {
         return rateModel.findAll()
