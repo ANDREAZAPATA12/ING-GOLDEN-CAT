@@ -6,7 +6,7 @@
 
           </v-card>
       <v-flex xs3 order-lg2>
-        <v-card-text  class="transparent  text-xs-center">
+        <v-card-text  class="transparent text-xs-center">
            <div > FOTO DE PERFIL</div>
         </v-card-text>
         <material-card class="v-card-profile">
