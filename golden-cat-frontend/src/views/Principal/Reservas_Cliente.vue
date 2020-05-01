@@ -4,10 +4,9 @@
       <v-tabs v-model="active" color="#0a6291" dark slider-color="greed" >
         <v-tab ripple> reservas activas</v-tab>
         <v-tab-item>
-          <v-card flat>
+          <v-card flat class="red">
             <v-card-text>
            <template v-for="n in 1">
-              <v-card dark tile flat color="#b88c0b" >
                <v-flex xs12 :key="n" mb-3>
                 <v-card color="bl" class="indigo darken-4" >
                   <v-layout row >
@@ -38,8 +37,8 @@
                     </v-flex>
                    </v-layout>
                    <v-divider light></v-divider>
-                   <v-expansion-panel>
-                        <v-expansion-panel-content >
+                   <v-expansion-panel class="green">
+                        <v-expansion-panel-content class="red" >
                         
                           <template v-slot:header >
                               
@@ -481,7 +480,7 @@
                </v-flex>
 
 
- </v-card>
+ 
               
               </template >
             </v-card-text>
@@ -490,7 +489,7 @@
 
         <v-tab ripple> reservas canceladas</v-tab>
         <v-tab-item>
-          <v-card flat>
+          <v-card flat class="red">
             <v-card-text> <template v-for="n in 1">
               <v-flex xs12 :key="n" mb-3>
                 <v-card color="#6e0a0a" class="white--text">
@@ -519,8 +518,8 @@
                     </v-flex>
                   </v-layout>
                   <v-divider light></v-divider>
-                  <v-expansion-panel>
-                        <v-expansion-panel-content >
+                  <v-expansion-panel class="green">
+                        <v-expansion-panel-content class="red" >
                           <template v-slot:header>
                                <v-btn  color="#0f7fab" dark v-on="on" >Mas Detalles</v-btn>
                           </template>

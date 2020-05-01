@@ -63,8 +63,6 @@
      <v-toolbar flat color="white">
       <v-spacer></v-spacer>
       <v-dialog v-model="dialog" max-width="500px">
-        <template v-slot:activator="{ on }">
-        </template>
         <v-card>
           <v-card-title>
             <span class="headline">{{ formTitle }}</span>

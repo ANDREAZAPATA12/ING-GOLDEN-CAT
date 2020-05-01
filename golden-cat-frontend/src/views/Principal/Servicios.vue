@@ -7,7 +7,7 @@
           <v-card dark tile flat color="#739174">
             <v-card-text>
             
-            <v-container  fill-height fluid>
+            <v-container   fill-height fluid>
               <v-layout fill-height>
                 <v-flex  justify-center align-center xs12 align-end flexbox>
                   <v-card-title class="headline center font-weight-regular indigo darken-4 ">BAR Y CAFETERIA</v-card-title>

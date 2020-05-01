@@ -3,7 +3,7 @@
 <v-layout row>
         <v-flex xs6>
           <v-card dark tile flat color="transparent">
-            <v-img height="380px" width="280px":src="logo" ></v-img>
+            <v-img height="380px" width="280px" :src="logo" ></v-img>
 
           </v-card>
         </v-flex>
@@ -157,21 +157,15 @@
         <v-card-actions>
         <v-card dark tile flat color="#6e0505">
           <v-btn
-            flat
-            @click="agreement = false, dialog = false"
-          >
-            No
+            flat @click="agreement = false, dialog = false"> No
           </v-btn>
           </v-card>
           <v-spacer></v-spacer>
           <v-btn
             class="white--text"
             color="blue darken-3"
-            @click="agreement = true, dialog = false"
-          >
-            Acepto
+            @click="agreement = true, dialog = false"> Acepto
           </v-btn>
-         
         </v-card-actions>
           </v-card>
       </v-card>

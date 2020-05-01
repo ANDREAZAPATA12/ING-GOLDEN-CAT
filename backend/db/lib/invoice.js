@@ -14,7 +14,7 @@ function setupInvoice(invoiceModel) {
       async function updateInvoice(uuid, invoice) {
       const cond = { where: { uuid } }
       const result = await invoiceModel.update(invoice, cond)
-      return result ? invoiceModel.findOne(cond) : new Error('no se actualizo ninguna tarifa')
+      return result ? invoiceModel.findOne(cond) : new Error('No se actualizo ninguna tarifa')
       }
       function findAllInvoice() {
         return invoiceModel.findAll()

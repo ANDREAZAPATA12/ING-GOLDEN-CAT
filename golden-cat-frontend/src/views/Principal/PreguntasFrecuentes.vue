@@ -3,7 +3,7 @@
     <v-layout row>
       <v-flex xs12 >
         <v-card dark tile flat color="error">
-        <v-img height="300px" width="1090px" margin="100px":src="preguntasfrecuentes" ></v-img>
+        <v-img height="300px" width="1090px" margin="100px" :src="preguntasfrecuentes" ></v-img>
         </v-card>
       </v-flex>
     </v-layout>
@@ -14,11 +14,8 @@
             <v-expansion-panel-content>
             
               <template  v-slot:header >
-         
                 <div>1. ¿Puedo realizar modificaciones a una reserva confirmado y pago?</div>
-               
                </template>
-           
               <v-card>
               <v-card dark tile flat color="#02566e">
                 <v-card-text>Sí se puede realizar modificaciones.</v-card-text>

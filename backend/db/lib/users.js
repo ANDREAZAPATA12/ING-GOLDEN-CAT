@@ -16,7 +16,7 @@ function setupUser (userModel) {
   async function updateUser(uuid, user) {
     const cond = { where: { uuid } }
     const result = await userModel.update(user, cond)
-    return result ? userModel.findOne(cond) : new Error('no se actualizo ningun usuario')
+    return result ? userModel.findOne(cond) : new Error('No se actualizo ningun usuario')
 
   }
   function findAllUser(){
@@ -33,13 +33,13 @@ function setupUser (userModel) {
     if (!user) {
       return {
         login: false,
-        message: 'no se encuentra registrado el email ingresado'
+        message: 'No se encuentra registrado el Usuario ingresado.'
       }
     }
     if (!(password.compareHash(credential.password, user.password))){
       return {
         login: false,
-        message: 'contraseña incorrecta'
+        message:  'Contraseña Incorrecta'
       }
     }
     return{

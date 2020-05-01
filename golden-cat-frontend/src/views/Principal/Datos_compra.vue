@@ -106,8 +106,8 @@
                             </template>
                             <v-card >
                               <v-carousel >
-                                <v-carousel-item v-for="(item1,i) in items1" :key="i" :src="item1.src"></v-carousel-item>
-                              </v-carousel>
+                                <v-carousel-item v-for="(item1,i) in items1":key= "i":src= "item1.src"></v-carousel-item >
+                              </v-carousel >
                              </v-card>
                           </v-dialog>
                         </v-card>
@@ -134,7 +134,7 @@
               </v-layout>
             </v-container>
           </v-card>
-          <v-btn  color="green" @click="e1 = 2"> Continue</v-btn>
+          <v-btn  color="green" @click= "e1 = 2"> Continue</v-btn >
         
           <v-btn  color="red" flat to="/" >CANCELAR</v-btn color="green" >
         </v-stepper-content>
@@ -229,14 +229,14 @@
               <v-flex xs12 sm6 md3 order-md4 order-sm3>
                 <v-card dark tile flat >
                      <v-card dark tile flat color="#0c3d57" >
-                  <v-text-field small label="" solo v-model="user.city"</v-text-field>
+                  <v-text-field small label="" solo v-model="user.city"</v-text-field > 
                 </v-card>
                 </v-card>
               </v-flex>
             </v-layout>
           </v-card>
-          <v-btn color="green" @click="e1 = 3"> Continue</v-btn>
-          <v-btn flat @click="e1 = 1 " color="red">ATRAS</v-btn>
+          <v-btn color="green" @click= "e1 = 3"> Continue</v-btn>
+          <v-btn flat @click= "e1= 1 " color="red" >ATRAS</v-btn >
         </v-stepper-content>
         <v-stepper-content step="3">
 
@@ -272,8 +272,8 @@
                   </v-card-text>
                   <v-card-actions>
                     <v-spacer></v-spacer>
-                    <v-btn color="#0c3d57 darken-4"  dark @click="dialogTarjeta = false">Close</v-btn>
-                    <v-btn color="#0c3d57 darken-4"  dark @click="dialogTarjeta = false">Save</v-btn>
+                    <v-btn color="#0c3d57 darken-4"  dark @click= "dialogTarjeta = false">Close</v-btn>
+                    <v-btn color="#0c3d57 darken-4"  dark @click= "dialogTarjeta = false">Save</v-btn>
                   </v-card-actions>
                 </v-card>
               </v-dialog>
@@ -305,8 +305,8 @@
                   </v-card-text>
                   <v-card-actions>
                     <v-spacer></v-spacer>
-                    <v-btn color="#0c3d57 darken-4"  dark @click="dialogEfecty = false">Close</v-btn>
-                    <v-btn color="#0c3d57 darken-4"  dark @click="dialogEfecty = false">Save</v-btn>
+                    <v-btn color="#0c3d57 darken-4"  dark @click= "dialogEfecty = false">Close</v-btn>
+                    <v-btn color="#0c3d57 darken-4"  dark @click= "dialogEfecty = false">Save</v-btn>
                   </v-card-actions>
                 </v-card>
               </v-dialog>
@@ -338,8 +338,8 @@
                   </v-card-text>
                   <v-card-actions>
                     <v-spacer></v-spacer>
-                    <v-btn color="#0c3d57 darken-4"  dark @click="dialogPaypal = false">Close</v-btn>
-                    <v-btn color="#0c3d57 darken-4"  dark @click="dialogPaypal = false">Save</v-btn>
+                    <v-btn color="#0c3d57 darken-4"  dark @click= "dialogPaypal = false">Close</v-btn>
+                    <v-btn color="#0c3d57 darken-4"  dark @click= "dialogPaypal = false">Save</v-btn>
                   </v-card-actions>
                 </v-card>
               </v-dialog>
@@ -371,8 +371,8 @@
                   </v-card-text>
                   <v-card-actions>
                     <v-spacer></v-spacer>
-                    <v-btn color="#0c3d57 darken-4"  dark @click="dialogHotel = false">Close</v-btn>
-                    <v-btn color="#0c3d57 darken-4"  dark @click="dialogHotel = false">Save</v-btn>
+                    <v-btn color="#0c3d57 darken-4"  dark @click= "dialogHotel = false">Close</v-btn>
+                    <v-btn color="#0c3d57 darken-4"  dark @click= "dialogHotel = false">Save</v-btn>
                   </v-card-actions>
                 </v-card>
               </v-dialog>
@@ -382,7 +382,7 @@
             <v-dialog v-model="dialogConfirmar" persistent max-width="290">
               <template v-slot:activator="{ on }">
                 <v-btn color="green" dark v-on="on">reservar</v-btn>
-                <v-btn flat color="red" @click="e1 = 2">atras</v-btn>
+                <v-btn flat color="red" @click= "e1 = 2">atras</v-btn>
               </template>
             
               <v-card>
@@ -394,7 +394,7 @@
                 <v-card-text>en caso de no generarse el reembolso en las horas estrablecidas ponerce en conctacto con nuestros numero de atencion al cliente 32346545 - 72435565 </v-card-text>
                 <v-card-actions>
                   <v-spacer></v-spacer>
-                   <v-btn color="indigo darken-4"  @click="e1 = 0, dialogConfirmar = false , reservaConfirm = true"  > confirma reserva</v-btn>
+                   <v-btn color="indigo darken-4"  @click= "e1 = 0, dialogConfirmar = false , reservaConfirm = true"  > confirma reserva</v-btn>
                   <v-btn flat  color="red" to="/" >CANCELAR</v-btn" >
                 </v-card-actions>
                 </v-card>

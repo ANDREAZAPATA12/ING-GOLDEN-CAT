@@ -367,7 +367,7 @@
               <v-img :aspect-ratio="16/9" :src="habitacion2">
                 <v-expand-transition>
                   <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  
-                  style="height: 100%;" >
+                  style="height: 100%" >
                  meshume
                   </div>
                 </v-expand-transition>
@@ -543,7 +543,7 @@
               <v-img :aspect-ratio="16/9" :src="habitacion2">
                 <v-expand-transition>
                   <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  
-                  style="height: 100%;" >
+                  style="height: 100%" >
                  meshume
                   </div>
                 </v-expand-transition>
@@ -605,8 +605,7 @@ export default {
   async created () {
     this.$store.commit('SET_LAYOUT', 'principal-layout')
     const data = await api.get('/user', {
-
-    })
+ })
   },
   data: () => ({
     itemsnumeroadultos: ['1', '2', '3', '4', '5'],
@@ -725,7 +724,7 @@ width: 100%;
   font-size: 25px;
 }
 
-.SecText h2 ##0bb5a4Text {
+.SecText h2 Text {
   color: rgb(162, 164, 182);
   padding-bottom: 3px;
   border-bottom: 2px solid #fff;

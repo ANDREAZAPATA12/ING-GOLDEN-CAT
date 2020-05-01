@@ -1,10 +1,24 @@
 {
     "git.ignoreLimitWarning": true,
     "workbench.colorCustomizations": {
-        "activityBar.background": "#352D0F",
-        "titleBar.activeBackground": "#4A3F15",
-        "titleBar.activeForeground": "#FCFBF5"
+        "activityBar.background": "#342c10",
+        "titleBar.activeBackground": "#0d0b04",
+        "titleBar.activeForeground": "#e7e7e7",
+        "activityBar.activeBackground": "#342c10",
+        "activityBar.activeBorder": "#267a67",
+        "activityBar.foreground": "#e7e7e7",
+        "activityBar.inactiveForeground": "#e7e7e799",
+        "activityBarBadge.background": "#267a67",
+        "activityBarBadge.foreground": "#e7e7e7",
+        "statusBar.background": "#0d0b04",
+        "statusBar.border": "#0d0b04",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#342c10",
+        "titleBar.border": "#0d0b04",
+        "titleBar.inactiveBackground": "#0d0b0499",
+        "titleBar.inactiveForeground": "#e7e7e799"
     },
     "workbench.settings.editor": "json",
-    "editor.defaultFormatter": "vscode.git"
+    "editor.defaultFormatter": "vscode.git",
+    "peacock.color": "#0d0b04"
 }/*  */

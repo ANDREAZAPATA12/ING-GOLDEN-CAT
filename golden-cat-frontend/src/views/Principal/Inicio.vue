@@ -74,7 +74,7 @@
          <v-card dark tile flat color="#b88c0b" >
             <v-container>
          <div class="containercss">
-           <v-img height="166px":src="HabitacionDoble"></v-img>
+           <v-img height="166px" :src="HabitacionDoble"></v-img>
             <div class="overlaycss">
             <div class="textcss ">Habitación Doble</div>
             </div>
@@ -846,7 +846,7 @@ width: 100%;
   font-size: 25px;
 }
 
-.SecText h2 ##0bb5a4Text {
+.SecText h2 Text {
   color: rgb(162, 164, 182);
   padding-bottom: 3px;
   border-bottom: 2px solid #fff;

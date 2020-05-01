@@ -31,7 +31,7 @@
             </v-card-title >
            
              
-            <v-dialog class="text-xs-center" v-model="dialogGRUPOSFAMILIARES"color="red" width="500" >
+            <v-dialog class="text-xs-center" v-model="dialogGRUPOSFAMILIARES" color="red" width="500" >
               <template v-slot:activator="{ on }">
                 <div class="text-xs-center">
                   <v-btn color="#0f7fab" dark v-on="on" >Mas detalles</v-btn>
