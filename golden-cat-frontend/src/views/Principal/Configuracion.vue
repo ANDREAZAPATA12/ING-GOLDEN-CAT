@@ -2,7 +2,7 @@
   <v-container fluid>
     <v-layout row center >
       <v-card dark tile flat color="transparent">
-            <v-img height="300px" width="400px":src="logo" ></v-img>
+            <v-img height="300px" width="400px" :src="logo" ></v-img>
 
           </v-card>
       <v-flex xs3 order-lg2>

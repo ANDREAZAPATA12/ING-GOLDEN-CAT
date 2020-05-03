@@ -63,7 +63,9 @@
                         </v-flex>
                         <v-flex xs4>
                          <v-card dark tile flat color="#0c3d57" >
-                          <v-card-text class=" font-weight-light text-sm-left .headline" >{{ room.number_max}</v-card-text>
+                          <v-card-text class=" font-weight-light text-sm-left .headline" > <v-list-tile-content>
+                    <v-list-tile-sub-title>{{ user.name + " " + user.lastName }}</v-list-tile-sub-title>
+                  </v-list-tile-content></v-card-text>
                              </v-card>
                         </v-flex>
                       </v-layout>
@@ -106,7 +108,7 @@
                             </template>
                             <v-card >
                               <v-carousel >
-                                <v-carousel-item v-for="(item1,i) in items1":key= "i":src= "item1.src"></v-carousel-item >
+                                <v-carousel-item v-for="(item1,i) in items1" :key= "i" :src= "item1.src"></v-carousel-item >
                               </v-carousel >
                              </v-card>
                           </v-dialog>
@@ -136,7 +138,7 @@
           </v-card>
           <v-btn  color="green" @click= "e1 = 2"> Continue</v-btn >
         
-          <v-btn  color="red" flat to="/" >CANCELAR</v-btn color="green" >
+          <v-btn  color="red" flat to="/" >CANCELAR</v-btn >
         </v-stepper-content>
 
         <v-stepper-content step="2">
@@ -229,7 +231,7 @@
               <v-flex xs12 sm6 md3 order-md4 order-sm3>
                 <v-card dark tile flat >
                      <v-card dark tile flat color="#0c3d57" >
-                  <v-text-field small label="" solo v-model="user.city"</v-text-field > 
+                  <v-text-field small label="" solo v-model="user.city"> </v-text-field > 
                 </v-card>
                 </v-card>
               </v-flex>
@@ -395,7 +397,7 @@
                 <v-card-actions>
                   <v-spacer></v-spacer>
                    <v-btn color="indigo darken-4"  @click= "e1 = 0, dialogConfirmar = false , reservaConfirm = true"  > confirma reserva</v-btn>
-                  <v-btn flat  color="red" to="/" >CANCELAR</v-btn" >
+                  <v-btn flat  color="red" to="/" >CANCELAR</v-btn >
                 </v-card-actions>
                 </v-card>
               </v-card>
@@ -563,7 +565,7 @@
             </v-layout>
           </v-card>
           <v-btn color="red" to="/" dark >salir</v-btn>
-               </v-card>
+              
     </v-container>
   </section>
 </template>
@@ -577,7 +579,12 @@ export default {
   computed: {
     ...mapState(['user'])
   },
+ async created () {
+    this.$store.commit('SET_LAYOUT', 'principal-layout')
+    const data = await api.get('/user', {
 
+    })
+  },
 
   created () {
     this.getroom()
