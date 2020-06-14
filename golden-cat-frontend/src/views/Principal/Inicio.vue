@@ -21,18 +21,26 @@
               <v-select :items="itemsnumeroniños" color="white" label="Numero de niños"></v-select>
           </v-flex>
           <v-flex xs12 sm6 md2>
-            <v-btn round color="blue" @click="e1 = 0, dialogConfirmar = false , reservaConfirm = true" ><v-icon color="black">search</v-icon></v-btn>
+            <v-btn round color="blue" @click="e1 = 0, dialogConfirmar = false , reservaConfirm = true" >
+              <v-icon color="black">search</v-icon></v-btn>
           </v-flex>
         </v-layout>
         <v-layout color="red"  class="align-center justify-start row align-center">
           <v-flex xs12 sm6 md6>
             <v-radio-group v-model="acomodacion" row>
-              <v-radio color="red" label="Individual" value="radio-1"></v-radio>
+             <v-btn > <v-radio color="red" label="Individual" value="radio-1" ></v-radio></v-btn> 
               <v-radio color="red" label="Doble" value="radio-2"></v-radio>
               <v-radio color="red" label="Suite" value="radio-3"></v-radio>
               <v-radio color="red" label="Matrimonial" value="radio-4"></v-radio>
             </v-radio-group>
           </v-flex>
+         
+       <v-btn flat color="white" to="/Individual">I</v-btn>  
+            <v-btn flat color="white" to="/Doble">D</v-btn> 
+            <v-btn flat color="white" to="/Suite">S</v-btn> 
+             <v-btn flat color="white" to="/Matrimonial">M</v-btn>  
+                
+         
         </v-layout>
           </v-card>
       </v-container>
@@ -173,7 +181,7 @@
     <v-container  v-show="reservaConfirm">
      <v-layout wrap justify-space-around row>
       <template v-for="n in 1">
- <v-flex xs1 sm3 :key="n" mb-1 pa-2>
+       <v-flex xs1 sm3 :key="n" mb-1 pa-2>
           <v-hover>
             <v-card class="mx-auto" slot-scope="{ hover }" color="#0bb5a4" max-width="600" >
               <v-img :aspect-ratio="16/9" :src="habitacion2">
