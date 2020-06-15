@@ -67,6 +67,12 @@
            label="Identificación"
         ></v-text-field>
         <v-text-field
+           v-model="City"
+           color="white"
+           label="Ciudad"
+        ></v-text-field>
+        
+        <v-text-field
               v-model="password"
               color="white"
               label="Contraseña"
@@ -195,6 +201,7 @@ export default {
       email: '',
       Phone: '',
       Identification: '',
+      City: '',
       password: '',
       repeatPassword: '',
       isLoading: false,
@@ -285,7 +292,8 @@ export default {
               name: this.Name,
               lastName: this.LastName,
               phone: this.Phone,
-              identification: this.Identification
+              identification: this.Identification,
+              city:  this.City
             }
           })
           const { data } = await api.post('/user/login', {

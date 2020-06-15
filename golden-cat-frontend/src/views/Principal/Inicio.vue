@@ -28,8 +28,8 @@
         <v-layout color="red"  class="align-center justify-start row align-center">
           <v-flex xs12 sm6 md6>
             <v-radio-group v-model="acomodacion" row>
-             <v-btn > <v-radio color="red" label="Individual" value="radio-1" ></v-radio></v-btn> 
-              <v-radio color="red" label="Doble" value="radio-2"></v-radio>
+             <v-btn color="#b88c0b" to="Individual"> <v-radio color="red" label="Individual" value="radio-1" ></v-radio></v-btn> 
+              <v-radio  to="Individual"  color="red" label="Doble"  value="radio-2"></v-radio>
               <v-radio color="red" label="Suite" value="radio-3"></v-radio>
               <v-radio color="red" label="Matrimonial" value="radio-4"></v-radio>
             </v-radio-group>

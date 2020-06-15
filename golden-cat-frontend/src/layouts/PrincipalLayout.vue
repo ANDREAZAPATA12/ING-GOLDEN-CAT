@@ -129,6 +129,8 @@
                <v-divider ></v-divider>
                 <v-btn color="transparent" to="/Eventos" depressed small>eventos</v-btn>
                 <v-divider ></v-divider>
+                    <v-btn color="transparent" to="/Individual" depressed small>Individual</v-btn>
+                    <v-divider ></v-divider>
           </v-card>
         </v-flex>
         <v-flex xs2  >
@@ -138,7 +140,12 @@
              <v-divider ></v-divider>
               <v-btn color="transparent" to="/PreguntasFrecuentes" depressed small>preguntas frecuentes</v-btn>
               <v-divider ></v-divider>
-
+              <v-btn color="transparent" to="/Matrimonial" depressed small>Matrimonial</v-btn>
+                    <v-divider ></v-divider>
+                    <v-btn color="transparent" to="/Doble" depressed small>Doble</v-btn>
+                    <v-divider ></v-divider>
+                    <v-btn color="transparent" to="Suite" depressed small>Suite</v-btn>
+                    <v-divider ></v-divider>
           </v-card>
         </v-flex>
 

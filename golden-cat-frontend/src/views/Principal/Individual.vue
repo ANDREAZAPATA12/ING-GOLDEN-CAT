@@ -64,10 +64,10 @@
                 </v-btn>
                 <v-layout row>
                   <v-flex xs6 order-lg2>
-                    <v-card-text  class="margen text-sm-left">tipo de habitacion</v-card-text>
+                    <v-card-text  class="margen text-sm-left">Doble</v-card-text>
                   </v-flex>
                   <v-flex xs6>
-                    <v-card-text  class="margen " >Doble
+                    <v-card-text  class="margen " >tipo de habitacion
                     </v-card-text>
                   </v-flex>
                 </v-layout>
