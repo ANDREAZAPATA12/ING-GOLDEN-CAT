@@ -239,6 +239,6 @@ export default {
   z-index: 5;
 }
  .v-content{
-     background-color: rgb(193, 225, 245)
+     background-color: rgb(230, 242, 245)
     }
 </style>

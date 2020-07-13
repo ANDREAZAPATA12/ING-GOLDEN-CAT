@@ -1,13 +1,13 @@
 <template>
   <section>
-     <v-card dark tile flat color="#b88c0b" >
+     <v-card dark tile flat color="#0f7fab" >
     <v-container class="barrabuscar #0bb5a4--text">
        <v-card dark tile flat color="red" >
          <v-div class="hotelportada">
              
  <v-card dark tile flat color="green" >
       <v-container class="contenedor text-xs-center" pa-1>
-       <v-card dark tile flat color="#b88c0b" >
+       <v-card dark tile flat color="#0f7fab" >
 
         <v-layout   class=" justify-space-between row wrap  align-center">
          <v-flex xs12 sm6 md4 pb-0 >
@@ -54,9 +54,9 @@
 
       <v-layout row >
         <v-flex xs12 >
-          <v-card dark tile flat color="blue lighten -1" >
+          <v-card dark tile flat color="#053d75" >
 
-              <h3 class="letra2 text-md-center white--text  "  >La Mejor Opcion Para Ti y Tu familia</h3>
+              <h3 class="letra2 text-md-center blue--text  "  >La Mejor Opcion Para Ti y Tu familia</h3>
              <v-container>
               <v-img class="gifpublicidad " :src="gifpublicidad"></v-img>
            </v-container>
@@ -66,7 +66,7 @@
 
        <v-layout row wrap>
         <v-flex xs12 sm6 md3  >
-         <v-card dark tile flat color="#b88c0b" >
+         <v-card dark tile flat color="#42ddeb" >
           <v-container>
          <div class="containercss">
            <v-img height="166px" :src="HabitacionIndividual"></v-img>
@@ -79,7 +79,7 @@
         </v-flex>
 
         <v-flex xs12 sm6 md3 >
-         <v-card dark tile flat color="#b88c0b" >
+         <v-card dark tile flat color="#42ddeb" >
             <v-container>
          <div class="containercss">
            <v-img height="166px" :src="HabitacionDoble"></v-img>
@@ -91,7 +91,7 @@
               </v-card>
         </v-flex>
         <v-flex xs12 sm6 md3 >
-          <v-card dark tile flat color="#b88c0b" >
+          <v-card dark tile flat color="#42ddeb" >
             <v-container>
          <div class="containercss">
            <v-img class="imagecss" :src="HabitacionMatrimoniales"></v-img>
@@ -103,7 +103,7 @@
             </v-card>
         </v-flex>
          <v-flex xs12 sm6 md3 >
-           <v-card dark tile flat color="#b88c0b" >
+           <v-card dark tile flat color="#42ddeb" >
              <v-container>
          <div class="containercss">
            <v-img class="imagecss" :src="HabitacionSuite"></v-img>
@@ -118,7 +118,7 @@
 
       <v-layout row>
         <v-flex xs12 >
-          <v-card dark tile flat color="blue lighten -1">
+          <v-card dark tile flat color="#053d75">
             <v-card-text>
                <v-img class="imagen1"  :src="portadahotel" ></v-img>
             </v-card-text>
@@ -127,7 +127,7 @@
       </v-layout>
       <v-layout row wrap>
         <v-flex xs12 sm6 md4  >
-          <v-card dark tile flat color="#b88c0b">
+          <v-card dark tile flat color="#42ddeb">
             <v-card-text class="MainImage1">
               <div class = "Container" >
                   <div class = "MainImage" >
@@ -144,7 +144,7 @@
           </v-card>
         </v-flex>
         <v-flex xs12 sm6 md4 >
-          <v-card dark tile flat color="blue lighten -1">
+          <v-card dark tile flat color="#053d75">
             <v-card-text class="MainImage1">
               <div class = "Container" >
                   <div class = "MainImage" > <img :src = "pareja" alt = "Efecto CSS" >
@@ -160,7 +160,7 @@
           </v-card>
         </v-flex>
         <v-flex xs12 sm6 md4 >
-          <v-card dark tile flat color="#b88c0b">
+          <v-card dark tile flat color="#42ddeb">
             <v-card-text class="MainImage1">
               <div class = "Container" >
                   <div class = "MainImage" > <img :src = "conferencia" alt = "Efecto CSS" >
