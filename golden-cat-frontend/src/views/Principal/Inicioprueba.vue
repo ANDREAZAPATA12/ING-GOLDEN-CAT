@@ -1,15 +1,18 @@
 <template>
-  <div id="example-1">
-  <button v-on:click="counter += 1">Add 1</button>
-  <p>The button above has been clicked {{ counter }} times.</p>
-</div>
+ <select v-model="selected">
+  <option disabled value="">Seleccione un elemento</option>
+  <option>A</option>
+  <option>B</option>
+  <option>C</option>
+</select>
 </template>
 <script>
-var example1 = new Vue({
-  el: '#example-1',
+new Vue({
+  el: '...',
   data: {
-    counter: 0
+    selected: ''
   }
 })
+
 </script>
- 
+  

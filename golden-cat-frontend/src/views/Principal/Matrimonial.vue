@@ -1,38 +1,37 @@
 <template>
   <section>
-     <v-card dark tile flat color="#0f7fab" >
+       <v-card dark tile flat color="#0f7fab" >
     <v-container class="barrabuscar #0bb5a4--text">
        <v-card dark tile flat color="red" >
          <v-div class="hotelportada">
              
  <v-card dark tile flat color="green" >
-      <v-container class="contenedor  text-xs-center" pa-2>
+      <v-container class="contenedor text-xs-center" pa-1>
        <v-card dark tile flat color="#0f7fab" >
 
         <v-layout   class=" justify-space-between row wrap  align-center">
          <v-flex xs12 sm6 md4 pb-0>
-      
-         <VueHotelDatepicker class=" white--text"  placeholder="Fecha Inicio / Fecha Final" />
-           
+               <VueHotelDatepicker class="subheader white--text display font-weight-bold " placeholder="Fecha Inicio / Fecha Final"/>
           </v-flex>
           
           <v-flex xs12 sm6 md2>
-            <v-select :items="itemsnumeroadultos"  color="white" label="Numero de adultos"></v-select>
+            <v-select :items="itemsnumeroadultos"  color="black" label="Numero de adultos"></v-select>
           </v-flex>
           <v-flex xs12 sm6 md2>
               <v-select :items="itemsnumeroniños" color="white" label="Numero de niños"></v-select>
           </v-flex>
           <v-flex xs12 sm6 md2>
-            <v-btn round color="blue" @click="e1 = 0, dialogConfirmar = false , reservaConfirm = true" ><v-icon color="black">search</v-icon></v-btn>
+            <v-btn round color="blue" @click="e1 = 0, dialogConfirmar = false , reservaConfirm = true" >
+              <v-icon color="black">search</v-icon></v-btn>
           </v-flex>
         </v-layout>
         <v-layout color="red"  class="align-center justify-start row align-center">
           <v-flex xs12 sm6 md6>
             <v-radio-group v-model="acomodacion" row>
-              <v-radio color="red" label="Individual" value="radio-1"></v-radio>
-              <v-radio color="red" label="Doble" value="radio-2"></v-radio>
-              <v-radio color="red" label="Suite" value="radio-3"></v-radio>
-              <v-radio color="red" label="Matrimonial" value="radio-4"></v-radio>
+             <v-btn  color="transparent" to="Individual">Individual</v-btn>
+            <v-btn color="transparent" to="Doble">Doble</v-btn>
+             <v-btn color="transparent" to="Suite"> Suite</v-btn>
+             <v-btn color="transparent" to="Matrimonial">Matrimonial</v-btn>
             </v-radio-group>
           </v-flex>
         </v-layout>

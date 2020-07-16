@@ -1,6 +1,6 @@
 <template>
   <section>
-     <v-card dark tile flat color="#0f7fab" >
+       <v-card dark tile flat color="#0f7fab" >
     <v-container class="barrabuscar #0bb5a4--text">
        <v-card dark tile flat color="red" >
          <v-div class="hotelportada">
@@ -10,8 +10,8 @@
        <v-card dark tile flat color="#0f7fab" >
 
         <v-layout   class=" justify-space-between row wrap  align-center">
-         <v-flex xs12 sm6 md4 pb-0 >
-               <VueHotelDatepicker class="pink li"   placeholder="Fecha Inicio / Fecha Final" />
+         <v-flex xs12 sm6 md4 pb-0>
+               <VueHotelDatepicker class="subheader white--text display font-weight-bold " placeholder="Fecha Inicio / Fecha Final"/>
           </v-flex>
           
           <v-flex xs12 sm6 md2>
@@ -28,17 +28,11 @@
         <v-layout color="red"  class="align-center justify-start row align-center">
           <v-flex xs12 sm6 md6>
             <v-radio-group v-model="acomodacion" row>
-             <v-btn color="#b88c0b" to="Individual"> <v-radio color="red" label="Individual" value="radio-1" ></v-radio></v-btn> 
-              <v-radio  to="Individual"  color="red" label="Doble"  value="radio-2"></v-radio>
-              <v-radio color="red" label="Suite" value="radio-3"></v-radio>
-              <v-radio color="red" label="Matrimonial" value="radio-4"></v-radio>
-            </v-radio-group>
+             <v-btn  color="transparent" to="Individual">Individual</v-btn>
+            <v-btn color="transparent" to="Doble">Doble</v-btn>
+             <v-btn color="transparent" to="Suite"> Suite</v-btn>
+             <v-btn color="transparent" to="Matrimonial">Matrimonial</v-btn></v-radio-group>
           </v-flex>
-         <div class="dealform__query-wrapper" ref=""><label class="visuallyhidden" for="querytext">Buscar</label><div><span class="icon-ic searchquery-icon icon-center"><svg xmlns="http://www.w3.org/2000/svg" focusable="false" tabindex="-1" width="24" height="24" viewBox="0 0 24 24"><g fill="none" class="svg-color--primary" stroke="#37454D" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10"><path d="M21 21l-6-6"></path><circle cx="10" cy="10" r="7"></circle></g></svg></span><input type="search" role="combobox" aria-expanded="false" aria-autocomplete="both" aria-owns="ssg-suggestions" autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="Escribe un nombre de hotel o un destino" name="sQuery" class="js-query input querytext" id="querytext" itemprop="query"></div></div>
-       <v-btn flat color="white" to="/Individual">I</v-btn>  
-            <v-btn flat color="white" to="/Doble">D</v-btn> 
-            <v-btn flat color="white" to="/Suite">S</v-btn> 
-             <v-btn flat color="white" to="/Matrimonial">M</v-btn> 
         </v-layout>
           </v-card>
       </v-container>
