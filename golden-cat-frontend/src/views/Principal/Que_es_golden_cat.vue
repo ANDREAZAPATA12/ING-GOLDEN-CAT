@@ -2,7 +2,7 @@
 
 <v-container fluid>
   <div class="transparent text-xs-center">
-      <h3 class="letra text-md-center" >¿ Que es Golden Cat ?</h3>
+      <h3 class="letra2 text-md-center blue--text display font-weight-bold " >¿ Que es Golden Cat ?</h3>
     </div>
 <v-card-text flatcolor="transparent">
       <v-layout row wrap>
@@ -11,21 +11,21 @@
         </v-flex >
         <v-flex d-flex xs3 sm md>
             <v-card-text>
-              <h1 class="blockquote text-xs-center ">GOLDEN CAT es el poder de sorprender
+              <h1 class="blockquote text-xs-center black--text display font-weight-bold ">GOLDEN CAT es el poder de sorprender
                 a nuestros clientes y somos expertos en dar experiencias de viaje
                 únicas a través de la sorpresa y la diversión.</h1>
               </v-card-text>
         </v-flex >
          <v-flex d-flex xs3 sm md>
           <v-card-text>
-              <h1 class="blockquote text-xs-center ">Nos apasiona la calidad y el buen
+              <h1 class="blockquote text-xs-center black--text display font-weight-bold ">Nos apasiona la calidad y el buen
                 servicio, y es por eso que dedicamos todo nuestro esfuerzo en ser los anfitriones
                 de las mejores vacaciones.</h1>
               </v-card-text>
         </v-flex >
          <v-flex d-flex xs3 sm md>
           <v-card-text>
-              <h1 class="blockquote text-xs-center ">Tenemos como propósito buscar todos los
+              <h1 class="blockquote text-xs-center black--text display font-weight-bold ">Tenemos como propósito buscar todos los
                 días la mejor forma de dar más de lo esperado a nuestros viajeros en destinos realmente
                 especiales.</h1>
               </v-card-text>
@@ -33,7 +33,7 @@
       </v-layout>
 </v-card-text>
   <div >
-   <h3 class="letra text-md-center" >mision</h3>
+   <h3 class="letra2 text-md-center blue--text display font-weight-bold " >Misión</h3>
   </div>
 <v-card-text>
       <v-layout row wrap>
@@ -43,19 +43,19 @@
           </v-card>
         </v-flex >
         <v-flex d-flex xs9 sm md>
-            <v-card-text>
-              <blockquote class="blockquote1 text-xs-center ">MISION : Satisfacer las necesidades de nuestros
-                clientes y huéspedes superando sus expectativas, brindándoles productos y servicios de calidad
+            <v-card-text >
+              <h3 class="blockquote1 text-xs-center black--text display font-weight-bold ">Satisfacer las necesidades de 
+                nuestros clientes y huéspedes superando sus expectativas, brindándoles productos y servicios de calidad
                 y amigables  con el medio ambiente a través de nuestros colaboradores. Aportar al desarrollo
                 económico y turístico de la Región mediante nuestro compromiso de excelencia e innovación,
                 generando a nuestros accionistas un crecimiento continuo  y sostenible año tras año.
-                </blockquote>
+                </h3>
               </v-card-text>
         </v-flex >
       </v-layout>
   </v-card-text>
   <div >
-   <h3 class="letra text-md-center" >vision</h3>
+   <h3 class="letra2 text-md-center blue--text display font-weight-bold " >Visión</h3>
   </div>
   <v-card-text>
     <v-layout row wrap>
@@ -66,13 +66,13 @@
         </v-flex >
         <v-flex d-flex xs9 sm md>
             <v-card-text>
-              <blockquote class="blockquote1 text-xs-center ">VISION  :  Ser reconocido para el año 2020, como
+              <h3 class="blockquote1 text-xs-center black--text display font-weight-bold ">Ser reconocido para el año 2020, como
                 el Hotel líder en el triangulo del Café, siendo la mejor opción para la realización de eventos,
                 congresos, y convenciones, y a su vez la mejor opción para su descanso y diversión en el Quindío.
                 Teniendo en cuenta el desarrollo sostenible a través de los procesos ambientales, asegurando
                 estabilidad laboral a nuestros colaboradores, generando empleo en la región y manteniendo altos
                 estándares de calidad en la prestación del servicio
-                </blockquote>
+                </h3>
               </v-card-text>
         </v-flex >
       </v-layout>
@@ -80,11 +80,11 @@
 
         <v-flex d-flex xs12 sm md>
             <v-card-text>
-              <h3 class="letra text-md-center" >NUESTROS VALORES</h3>
-              <blockquote class="blockquote1 text-xs-center ">En Golden Cat deseamos siempre dejar una huella imborrable
+              <h3 class="letra2 text-md-center blue--text display font-weight-bold " >Nuestros Valores</h3>
+              <h3 class="blockquote1 text-xs-center black--text display font-weight-bold ">En Golden Cat deseamos siempre dejar una huella imborrable
                 en nuestros huéspedes para que recuerden nuestra esencia y así poder ofrecer la mejor experiencia de vacaciones
                 . Es por esto, que nos basamos en los siguientes valores para cumplir con este fin:
-                </blockquote>
+                </h3>
               </v-card-text>
            </v-flex >
             </v-layout>

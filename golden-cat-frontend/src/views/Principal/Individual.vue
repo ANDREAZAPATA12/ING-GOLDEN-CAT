@@ -1,7 +1,7 @@
 <template>
   <section>
       <v-card dark tile flat color="#0f7fab" >
-    <v-container class="barrabuscar #0bb5a4--text">
+    <v-container class="barrabuscar #098de6--text">
        <v-card dark tile flat color="red" >
          <v-div class="hotelportada">
              
@@ -48,7 +48,7 @@
       <template v-for="n in 1">
  <v-flex xs1 sm3 :key="n" mb-1 pa-2>
           <v-hover>
-            <v-card class="mx-auto" slot-scope="{ hover }" color="yellow" max-width="600" >
+            <v-card class="mx-auto" slot-scope="{ hover }" color="#098de6" max-width="600" >
               <v-img :aspect-ratio="16/9" :src="habitacion2">
                 <v-expand-transition>
                   <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  
@@ -93,7 +93,7 @@
            
            <v-flex xs1 sm3 :key="n" mb-1 pa-2>
           <v-hover>
-            <v-card class="mx-auto" slot-scope="{ hover }" color="#0bb5a4" max-width="600" >
+            <v-card class="mx-auto" slot-scope="{ hover }" color="#098de6" max-width="600" >
               <v-img :aspect-ratio="16/9" :src="habitacion2">
                 <v-expand-transition>
                   <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  
@@ -137,7 +137,7 @@
            </v-flex>
              <v-flex xs1 sm3 :key="n" mb-1 pa-2>
           <v-hover>
-            <v-card class="mx-auto" slot-scope="{ hover }" color="#0bb5a4" max-width="600" >
+            <v-card class="mx-auto" slot-scope="{ hover }" color="#098de6" max-width="600" >
               <v-img :aspect-ratio="16/9" :src="habitacion2">
                 <v-expand-transition>
                   <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  
@@ -181,7 +181,7 @@
            </v-flex>
              <v-flex xs1 sm3 :key="n" mb-1 pa-2>
           <v-hover>
-            <v-card class="mx-auto" slot-scope="{ hover }" color="#0bb5a4" max-width="600" >
+            <v-card class="mx-auto" slot-scope="{ hover }" color="#098de6" max-width="600" >
               <v-img :aspect-ratio="16/9" :src="habitacion2">
                 <v-expand-transition>
                   <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  
@@ -225,7 +225,7 @@
            </v-flex>
              <v-flex xs1 sm3 :key="n" mb-1 pa-2>
           <v-hover>
-            <v-card class="mx-auto" slot-scope="{ hover }" color="#0bb5a4" max-width="600" >
+            <v-card class="mx-auto" slot-scope="{ hover }" color="#098de6" max-width="600" >
               <v-img :aspect-ratio="16/9" :src="habitacion2">
                 <v-expand-transition>
                   <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  
@@ -269,7 +269,7 @@
            </v-flex>
              <v-flex xs1 sm3 :key="n" mb-1 pa-2>
           <v-hover>
-            <v-card class="mx-auto" slot-scope="{ hover }" color="#0bb5a4" max-width="600" >
+            <v-card class="mx-auto" slot-scope="{ hover }" color="#098de6" max-width="600" >
               <v-img :aspect-ratio="16/9" :src="habitacion2">
                 <v-expand-transition>
                   <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  
@@ -313,7 +313,7 @@
            </v-flex>
              <v-flex xs1 sm3 :key="n" mb-1 pa-2>
           <v-hover>
-            <v-card class="mx-auto" slot-scope="{ hover }" color="#0bb5a4" max-width="600" >
+            <v-card class="mx-auto" slot-scope="{ hover }" color="#098de6" max-width="600" >
               <v-img :aspect-ratio="16/9" :src="habitacion2">
                 <v-expand-transition>
                   <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  
@@ -357,7 +357,7 @@
            </v-flex>
              <v-flex xs1 sm3 :key="n" mb-1 pa-2>
           <v-hover>
-            <v-card class="mx-auto" slot-scope="{ hover }" color="#0bb5a4" max-width="600" >
+            <v-card class="mx-auto" slot-scope="{ hover }" color="#098de6" max-width="600" >
               <v-img :aspect-ratio="16/9" :src="habitacion2">
                 <v-expand-transition>
                   <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  
@@ -401,7 +401,7 @@
            </v-flex>
              <v-flex xs1 sm3 :key="n" mb-1 pa-2>
           <v-hover>
-            <v-card class="mx-auto" slot-scope="{ hover }" color="#0bb5a4" max-width="600" >
+            <v-card class="mx-auto" slot-scope="{ hover }" color="#098de6" max-width="600" >
               <v-img :aspect-ratio="16/9" :src="habitacion2">
                 <v-expand-transition>
                   <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  
@@ -445,7 +445,7 @@
            </v-flex>
              <v-flex xs1 sm3 :key="n" mb-1 pa-2>
           <v-hover>
-            <v-card class="mx-auto" slot-scope="{ hover }" color="#0bb5a4" max-width="600" >
+            <v-card class="mx-auto" slot-scope="{ hover }" color="#098de6" max-width="600" >
               <v-img :aspect-ratio="16/9" :src="habitacion2">
                 <v-expand-transition>
                   <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  
@@ -489,7 +489,7 @@
            </v-flex>
              <v-flex xs1 sm3 :key="n" mb-1 pa-2>
           <v-hover>
-            <v-card class="mx-auto" slot-scope="{ hover }" color="#0bb5a4" max-width="600" >
+            <v-card class="mx-auto" slot-scope="{ hover }" color="#098de6" max-width="600" >
               <v-img :aspect-ratio="16/9" :src="habitacion2">
                 <v-expand-transition>
                   <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  
@@ -533,7 +533,7 @@
            </v-flex>
              <v-flex xs1 sm3 :key="n" mb-1 pa-2>
           <v-hover>
-            <v-card class="mx-auto" slot-scope="{ hover }" color="#0bb5a4" max-width="600" >
+            <v-card class="mx-auto" slot-scope="{ hover }" color="#098de6" max-width="600" >
               <v-img :aspect-ratio="16/9" :src="habitacion2">
                 <v-expand-transition>
                   <div  v-if="hover"  class="d-flex transition-fast-in-fast-out blue darken-2 v-card--reveal display-3 white--text"  
