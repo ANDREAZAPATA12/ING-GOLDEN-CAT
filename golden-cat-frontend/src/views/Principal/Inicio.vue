@@ -13,7 +13,10 @@
          <v-flex xs12 sm6 md4 pb-0>
                <VueHotelDatepicker class="subheader white--text display font-weight-bold " placeholder="Fecha Inicio / Fecha Final"/>
           </v-flex>
-          
+          <v-text-field
+                 v-model="number_personas" color="white"
+                 label="numero de personas"
+               ></v-text-field>
           <v-flex xs12 sm6 md2>
             <v-select :items="itemsnumeroadultos"  color="black" label="Numero de adultos"></v-select>
           </v-flex>
@@ -734,6 +737,7 @@ export default {
     itemsnumeroniños: ['1', '2', '3', '4', '5'],
     reservaConfirm: false,
     acomodacion: '',
+    number_personas: '',
     habitacion2: HABITACION2,
     pareja: PAREJA,
     portadahotel: PORTADAHOTEL,

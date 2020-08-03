@@ -40,6 +40,10 @@ module.exports = function setupMetricModel (config) {
       type: Sequelize.TEXT,
       allowNull: false
     },
+    city: {
+      type: Sequelize.TEXT,
+      allowNull: false
+    },
     images: {
       type: Sequelize.JSON
     }
