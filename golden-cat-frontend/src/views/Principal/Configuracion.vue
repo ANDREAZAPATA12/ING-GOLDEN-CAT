@@ -38,7 +38,7 @@
        <v-card-text>PAIS :</v-card-text>
       </v-flex>
       <v-flex xs3 order-lg2>
-        <v-select :items="items" solo v-model="user.countryId" ></v-select>
+        <v-text-field color="blue darken-4" small label="Colombia" solo v-model="Colombia"></v-text-field>
       </v-flex>
     </v-layout>
     <v-layout  row>
