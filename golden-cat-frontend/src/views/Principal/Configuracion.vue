@@ -6,16 +6,16 @@
 
           </v-card>
       <v-flex xs3 order-lg2>
-        <v-card-text  class="transparent text-xs-center">
+        <v-card-text  class="transparent text-xs-center blue--text display font-weight-bold ">
            <div > FOTO DE PERFIL</div>
         </v-card-text>
         <material-card class="v-card-profile">
-          <v-avatar class="text-xs-center mx-auto d-block" slot="offset"  size="130">
+          <v-avatar class="text-xs-center mx-auto d-block " slot="offset"  size="130">
             <img  :src="imgUrl" >
           </v-avatar>
-          <v-card-text class="text-xs-center">
+          <v-card-text class="text-xs-center" >
             <v-form name="formulario" method="post" enctype="form-data">
-              <v-text-field label="Select Image" @click='pickFile' v-model='imageName' prepend-icon='attach_file'></v-text-field>
+              <v-btn color="#5a9dd6" dark v-on="on" @click='pickFile' v-model='imageName' prepend-icon='attach_file'>Seleccionar Imagen </v-btn>
               <input type="file" style="display: none" ref="image" accept="image/*" @change="onFilePicked">
             </v-form>
           </v-card-text>
@@ -24,17 +24,17 @@
       </v-flex>
     </v-layout>
     <v-divider> </v-divider>
-    <v-card-text class="transparent text-xs-center">
+    <v-card-text class="transparent text-xs-center blue--text display font-weight-bold ">
       <div > DATOS PERSONALES</div>
     </v-card-text>
     <v-layout  row>
-      <v-flex xs2 order-lg2 class="transparent text-xs-center">
+      <v-flex xs2 order-lg2 class="transparent text-xs-center blue--text display font-weight-bold ">
         <v-card-text>NOMBRE :</v-card-text>
       </v-flex>
      <v-flex xs3 order-lg2>
         <v-text-field color="blue darken-4" small label="" solo v-model="user.name"></v-text-field>
       </v-flex>
-      <v-flex   xs2 order-lg2 class="transparent text-xs-center">
+      <v-flex   xs2 order-lg2 class="transparent text-xs-center blue--text display font-weight-bold ">
        <v-card-text>PAIS :</v-card-text>
       </v-flex>
       <v-flex xs3 order-lg2>
@@ -42,13 +42,13 @@
       </v-flex>
     </v-layout>
     <v-layout  row>
-      <v-flex xs2 order-lg2 class="transparent text-xs-center">
+      <v-flex xs2 order-lg2 class="transparent text-xs-center blue--text display font-weight-bold ">
         <v-card-text>APELLIDO :</v-card-text>
       </v-flex>
       <v-flex xs3 order-lg2>
         <v-text-field color="blue darken-4" small label="" solo v-model="user.lastName"></v-text-field>
       </v-flex>
-      <v-flex xs2 order-lg2 class="transparent text-xs-center">
+      <v-flex xs2 order-lg2 class="transparent text-xs-center blue--text display font-weight-bold ">
         <v-card-text>CIUDAD :</v-card-text>
       </v-flex>
       <v-flex xs3 order-lg2>
@@ -56,13 +56,13 @@
       </v-flex>
     </v-layout>
     <v-layout row>
-      <v-flex xs2 order-lg2 class="transparent text-xs-center">
+      <v-flex xs2 order-lg2 class="transparent text-xs-center blue--text display font-weight-bold ">
         <v-card-text>CC :</v-card-text>
       </v-flex>
       <v-flex xs3 order-lg2>
         <v-text-field color="blue darken-4" small label="" solo v-model="user.identification" ></v-text-field>
       </v-flex>
-      <v-flex   xs2 order-lg2 class="transparent text-xs-center">
+      <v-flex   xs2 order-lg2 class="transparent text-xs-center blue--text display font-weight-bold ">
         <v-card-text>TELEFONO :</v-card-text>
       </v-flex>
       <v-flex xs3 order-lg2>
@@ -71,15 +71,15 @@
     </v-layout>
 
     <v-divider> </v-divider>
-    <v-card-text class="transparent text-xs-center">
+    <v-card-text class="transparent text-xs-center blue--text display font-weight-bold ">
       <div > DATOS CUENTA</div>
     </v-card-text>
     <v-layout row>
 
-      <v-flex xs12 order-lg2  class="transparent text-xs-center">
+      <v-flex xs12 order-lg2  class="transparent text-xs-center blue--text display font-weight-bold ">
         <v-dialog v-model="dialogPassword" persistent max-width="600px">
           <template v-slot:activator="{ on }">
-            <v-btn color="red" dark v-on="on">Editar Contraseña</v-btn>
+            <v-btn color="#5a9dd6" dark v-on="on">Editar Contraseña</v-btn>
             <v-btn  color="success">Guardar cambios </v-btn>
           </template>
 

@@ -165,7 +165,7 @@
     </v-container>
 </template>
 <script>
-import LOGO from '@/assets/golden_cat.png'
+import LOGO from '@/assets/golden_cat-fondoblanco.png'
 import HOTEL from '@/assets/hotel.jpg'
 import PISCINA1 from '@/assets/piscina1.jpg'
 export default {

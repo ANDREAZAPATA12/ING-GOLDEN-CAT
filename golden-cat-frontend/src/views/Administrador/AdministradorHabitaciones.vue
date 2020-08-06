@@ -11,7 +11,7 @@
           <v-flex xs12 sm4>
             <v-text-field
               v-model="editedItem.Nohb"
-              box
+              box 
               label="No. Habitacion"
               clearable
             ></v-text-field>

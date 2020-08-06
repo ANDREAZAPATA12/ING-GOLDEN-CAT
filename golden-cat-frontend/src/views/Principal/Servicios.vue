@@ -4,7 +4,7 @@
         <v-flex d-flex xs6 sm md>
         <v-card dark tile flat color="#b88c0b">
           <v-card flatcolor="transparent" >
-          <v-card dark tile flat color="#739174">
+          <v-card dark tile flat color="#1c68a6">
             <v-card-text>
             
             <v-container   fill-height fluid>
@@ -47,7 +47,7 @@
         <v-flex d-flex xs6 sm md>
         <v-card dark tile flat color="#b88c0b">
           <v-card flatcolor="transparent" >
-          <v-card dark tile flat color="#739174">
+          <v-card dark tile flat color="#1c68a6">
             <v-card-text>
             <v-container fill-height fluid>
               <v-layout fill-height>
@@ -77,7 +77,7 @@
         <v-flex d-flex xs6 sm md>
           <v-card dark tile flat color="#b88c0b">
           <v-card flatcolor="transparent" >
-          <v-card dark tile flat color="#739174">
+          <v-card dark tile flat color="#1c68a6">
             <v-card-text>
             <v-container fill-height fluid>
               <v-layout fill-height>
@@ -117,7 +117,7 @@
         <v-flex d-flex xs6 sm md>
           <v-card dark tile flat color="#b88c0b">
           <v-card flatcolor="transparent" >
-          <v-card dark tile flat color="#739174">
+          <v-card dark tile flat color="#1c68a6">
             <v-card-text>
             <v-container fill-height fluid>
               <v-layout fill-height>
@@ -147,7 +147,7 @@
         <v-flex d-flex xs6 sm md>
           <v-card dark tile flat color="#b88c0b">
           <v-card flatcolor="transparent" >
-          <v-card dark tile flat color="#739174">
+          <v-card dark tile flat color="#1c68a6">
             <v-card-text>
             <v-container fill-height fluid>
               <v-layout fill-height>
