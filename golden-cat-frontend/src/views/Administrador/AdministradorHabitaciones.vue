@@ -61,7 +61,7 @@
             <v-combobox
               v-model="editedItem.tipohabitacion"
               box
-              label="tipo habitacion"
+              label="Tipo habitacion"
               :items="itemss"
             ></v-combobox>
           </v-flex>
@@ -234,10 +234,12 @@ export default {
       VBase: '',
       VCabeza: '',
        tipohabitacion:'',
-      imgUrl: ''
+      imgUrl: '',
+       images:'',
     },
     defaultItem: {
       Nohb: '',
+  images:'',
       estado: '',
       maximo: '',
       NMPrecioBase: '',
@@ -288,8 +290,9 @@ export default {
               value_base: this.editedItem.VBase,
               value_persona: this.editedItem.VCabeza,
               state: this.editedItem.estado,
-              name: this.editedItem.tipohabitacion
-
+              name: this.editedItem.tipohabitacion,
+             images: this.imgUrl,
+             
             }
           })
         const aler = await Swal.fire(

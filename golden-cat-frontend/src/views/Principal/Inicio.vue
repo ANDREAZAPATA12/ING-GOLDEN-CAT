@@ -13,10 +13,6 @@
          <v-flex xs12 sm6 md4 pb-0>
                <VueHotelDatepicker class="subheader white--text display font-weight-bold " placeholder="Fecha Inicio / Fecha Final"/>
           </v-flex>
-          <v-text-field
-                 v-model="number_personas" color="white"
-                 label="numero de personas"
-               ></v-text-field>
           <v-flex xs12 sm6 md2>
             <v-select :items="itemsnumeroadultos"  color="black" label="Numero de adultos"></v-select>
           </v-flex>
@@ -63,10 +59,11 @@
         <v-flex xs12 sm6 md3  >
          <v-card dark tile flat color="#42ddeb" >
           <v-container>
-         <div class="containercss">
+         <div class="containercss" >
            <v-img height="166px" :src="HabitacionIndividual"></v-img>
             <div class="overlaycss">
-            <div class="textcss ">Habitación Individual</div>
+              <v-btn class=" textcss blockquote text-xs-center " color="transparent" to="Individual"> Individual</v-btn>
+            
             </div>
           </div>
           </v-container>
@@ -79,7 +76,7 @@
          <div class="containercss">
            <v-img height="166px" :src="HabitacionDoble"></v-img>
             <div class="overlaycss">
-            <div class="textcss ">Habitación Doble</div>
+            <v-btn class=" textcss blockquote text-xs-center " color="transparent" to="Doble"> Habitacion Doble</v-btn>
             </div>
           </div>
           </v-container>
@@ -91,7 +88,7 @@
          <div class="containercss">
            <v-img class="imagecss" :src="HabitacionMatrimoniales"></v-img>
             <div class="overlaycss">
-            <div class="textcss ">Habitación Matrimonial</div>
+             <v-btn  color="transparent" to="Matrimonial"> Habitacion Matrimonial</v-btn>
             </div>
           </div>
           </v-container>
@@ -103,7 +100,7 @@
          <div class="containercss">
            <v-img class="imagecss" :src="HabitacionSuite"></v-img>
             <div class="overlaycss">
-            <div class="textcss ">Habitación Suite</div>
+             <v-btn class=" textcss blockquote text-xs-center " color="transparent" to="Suite"> Suite</v-btn>
             </div>
           </div>
           </v-container>
@@ -732,6 +729,7 @@ export default {
 
     })
   },
+  
   data: () => ({
     itemsnumeroadultos: ['1', '2', '3', '4', '5'],
     itemsnumeroniños: ['1', '2', '3', '4', '5'],
