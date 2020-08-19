@@ -32,13 +32,13 @@
         <v-card-text>NOMBRE :</v-card-text>
       </v-flex>
      <v-flex xs3 order-lg2>
-        <v-text-field color="blue darken-4" small label="" solo v-model="user.name"></v-text-field>
+        <v-text-field color="white" small label="" solo v-model="user.name"></v-text-field>
       </v-flex>
       <v-flex   xs2 order-lg2 class="transparent text-xs-center blue--text display font-weight-bold ">
        <v-card-text>PAIS :</v-card-text>
       </v-flex>
       <v-flex xs3 order-lg2>
-        <v-text-field color="blue darken-4" small label="Colombia" solo v-model="Colombia"></v-text-field>
+        <v-text-field color="white" small label="Colombia" solo v-model="Colombia"></v-text-field>
       </v-flex>
     </v-layout>
     <v-layout  row>
@@ -46,27 +46,27 @@
         <v-card-text>APELLIDO :</v-card-text>
       </v-flex>
       <v-flex xs3 order-lg2>
-        <v-text-field color="blue darken-4" small label="" solo v-model="user.lastName"></v-text-field>
+        <v-text-field color="white" small label="" solo v-model="user.lastName"></v-text-field>
       </v-flex>
       <v-flex xs2 order-lg2 class="transparent text-xs-center blue--text display font-weight-bold ">
         <v-card-text>CIUDAD :</v-card-text>
       </v-flex>
       <v-flex xs3 order-lg2>
-        <v-text-field color="blue darken-4" small label="" solo v-model="user.city"></v-text-field>
+        <v-text-field color="white" small label="" solo v-model="user.city"></v-text-field>
       </v-flex>
     </v-layout>
     <v-layout row>
       <v-flex xs2 order-lg2 class="transparent text-xs-center blue--text display font-weight-bold ">
-        <v-card-text>CC :</v-card-text>
+        <v-card-text>CEDULA DE CIUDADANIA :</v-card-text>
       </v-flex>
       <v-flex xs3 order-lg2>
-        <v-text-field color="blue darken-4" small label="" solo v-model="user.identification" ></v-text-field>
+        <v-text-field color="white" small label="" solo v-model="user.identification" ></v-text-field>
       </v-flex>
       <v-flex   xs2 order-lg2 class="transparent text-xs-center blue--text display font-weight-bold ">
         <v-card-text>TELEFONO :</v-card-text>
       </v-flex>
       <v-flex xs3 order-lg2>
-        <v-text-field color="blue darken-4" small label="" phone solo  v-model="user.phone"></v-text-field>
+        <v-text-field color="white" small label="" phone solo  v-model="user.phone"></v-text-field>
       </v-flex>
     </v-layout>
 
@@ -84,7 +84,7 @@
           </template>
 
           <v-card>
-          <v-card dark tile flat color="#3c5f7a" >
+          <v-card dark tile flat color="#0f6ba8" >
             <v-card-title>
               <span class="headline">CONTRASEÑA USUARIO</span>
             </v-card-title>
@@ -102,11 +102,11 @@
                   </v-flex>
                 </v-layout>
               </v-container>
-              <h5 class="letra2 text-md- red--text"> *Campo Requerido</h5>
+              <h5 class="letra2 text-md- white--text"> *Campo Requerido</h5>
              </v-card-text>
              <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn color="red darken-4" dark @click="dialogPassword = false">Salir</v-btn>
+              <v-btn color="green lighten" dark @click="dialogPassword = false">Salir</v-btn>
               <v-btn color="blue darken-4" dark @click="dialogPassword = false">Guardar</v-btn>
             </v-card-actions>
             </v-card>
