@@ -65,7 +65,7 @@
        <v-card-text>PAIS :</v-card-text>
       </v-flex>
       <v-flex xs3 order-lg2>
-        <v-select :items="items" solo v-model="user.city"></v-select>
+        <v-select :items="items" solo v-model="user.contry"></v-select>
       </v-flex>
     </v-layout>
     <v-layout  row>
@@ -79,7 +79,7 @@
         <v-card-text>CIUDAD :</v-card-text>
       </v-flex>
       <v-flex xs3 order-lg2>
-        <v-text-field small label="" solo v-model="user.country" ></v-text-field>
+        <v-text-field small label="" solo v-model="user.city" ></v-text-field>
       </v-flex>
     </v-layout>
     <v-layout row>

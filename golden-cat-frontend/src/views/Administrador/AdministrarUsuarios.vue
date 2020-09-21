@@ -14,6 +14,9 @@
             <v-text-field v-model="form.apellidos" color="blue darken-2" label="Apellidos" required></v-text-field>
           </v-flex>
           <v-flex xs12 sm6>
+            <v-text-field v-model="form.ciudad" color="purple darken-2" label="ciudad" required></v-text-field>
+          </v-flex>
+          <v-flex xs12 sm6>
             <v-text-field
               v-model="form.correo"
               color="blue darken-2"
@@ -205,6 +208,7 @@ export default {
     const defaultForm = Object.freeze({
       nombre: "",
       apellidos: "",
+      ciudad: "",
       correo: "",
       telefono: "",
       id: "",
@@ -219,6 +223,7 @@ export default {
       editedIndex: -1,
       defaultItem: {
         nombres: "",
+        ciudad: "",
         apellidos: "",
         correo: "",
         telefono: "",
@@ -226,6 +231,7 @@ export default {
       },
       editedItem: {
         nombres: "",
+        ciudad: "",
         apellidos: "",
         correo: "",
         telefono: "",
@@ -233,6 +239,7 @@ export default {
       },
       headers: [
         { text: "Nombre", value: "nombres" },
+         { text: "ciudad", value: "ciudad" },
         { text: "Apellido", value: "apellidos" },
         { text: "Correo", value: "correo" },
         { text: "Telefono", value: "telefono" },
@@ -336,6 +343,7 @@ export default {
         const { data: user } = await api.post("/user", {
           userNew: {
             name: this.form.nombre,
+            city: this.form.ciudad,
             lastName: this.form.apellidos,
             email: this.form.correo,
             phone: this.form.telefono,
@@ -347,9 +355,18 @@ export default {
         let clonUsers = [...this.users];
         clonUsers.push(user);
         this.$store.commit("SET_USERS", clonUsers);
-        Swal.fire("OK!", "Usuario registrado con exito", "success");
-      } catch (error) {
+        const aler = await Swal.fire("OK!", "Usuario registrado con exito", "success");
+      if (this.editedIndex > -1) {
+          Object.assign(this.desserts[this.editedIndex], this.editedItem)
+        } else {
+          this.desserts.push(this.editedItem)
+        }
+        this.close()
+        this.resetForm()
+      }
+      catch (error) {
         console.error(error);
+        
       }
     }
   }
