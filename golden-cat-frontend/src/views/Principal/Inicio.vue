@@ -89,7 +89,7 @@
          <div class="containercss">
            <v-img class="imagecss" :src="HabitacionMatrimoniales"></v-img>
             <div class="overlaycss">
-             <v-btn  color="transparent" to="Matrimonial"> Habitacion Matrimonial</v-btn>
+             <v-btn  class=" textcss blockquote text-xs-center " color="transparent" to="Matrimonial"> Habitacion Matrimonial</v-btn>
             </div>
           </div>
           </v-container>
