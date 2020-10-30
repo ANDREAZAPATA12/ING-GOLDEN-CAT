@@ -501,10 +501,10 @@
 
         <v-tab ripple> reservas canceladas</v-tab>
         <v-tab-item>
-          <v-card flat class="red">
+          <v-card flat class="blue darken-4">
             <v-card-text> <template v-for="n in 1">
               <v-flex xs12 :key="n" mb-3>
-                <v-card color="#6e0a0a" class="white--text">
+                <v-card color="#1E88E5" class="white--text">
                   <v-layout row >
                     <v-flex xs4>
                       <v-card-title primary-title>
@@ -530,12 +530,12 @@
                     </v-flex>
                   </v-layout>
                   <v-divider light></v-divider>
-                  <v-expansion-panel class="green">
-                        <v-expansion-panel-content class="red" >
+                  <v-expansion-panel class="blue darken-4">
+                        <v-expansion-panel-content class="blue darken-1" >
                           <template v-slot:header>
-                               <v-btn  color="#2d8abd" dark v-on="on" >Mas Detalles</v-btn>
+                               <v-btn  color="#0D47A1" dark v-on="on" >Mas Detalles</v-btn>
                           </template>
-                          <v-card dark tile flat color="#0d47a1" >
+                          <v-card dark tile flat color="#1E88E5" >
                             <v-card-text>
                               *Aire acondicionado <br>
                               *Baño con ducha, secador de pelo y servicio de *amenidades diarias<br>

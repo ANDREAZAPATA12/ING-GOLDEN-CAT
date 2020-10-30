@@ -11,18 +11,18 @@
         <v-flex xs12  >
             <v-card dark tile flat color="transparent">
                  <v-card-text>
-            <h1 class="letra1 text-sm-left"  >TÉRMINOS Y CONDICIONES.</h1>
+            <h1 class="letra1 text-sm-left black--text font-weight-bold"  >TÉRMINOS Y CONDICIONES.</h1>
              </v-card-text>
             <v-divider ></v-divider>
              <v-card-text>
-            <blockquote class="blockquote1 text-sm-left ">Servincluidos Ltda., actúa como intermediario entre los usuarios
+            <blockquote class="blockquote1 text-sm-left black--text ">Servincluidos Ltda., actúa como intermediario entre los usuarios
                 y quienes proporcionan los servicios incluidos (aerolíneas, hoteles y transporte terrestre entre otros)<br>
                 y se responsabiliza por estructurar paquetes turísticos para facilitar al viajero la obtención de
                 cupos aéreos y reservación de habitaciones en el Hotel Golden cat,<br> solicitar los servicios requeridos y contratarlos por cuenta del usuario de acuerdo con
                 la disponibilidad de los mismos, acorde<br> con la información suministrada por los prestadores de
                 servicio.
             </blockquote>
-              <blockquote class="blockquote1 text-sm-left ">Los viajeros que accedan a este sitio o adquieran los servicios
+              <blockquote class="blockquote1 text-sm-left black--text">Los viajeros que accedan a este sitio o adquieran los servicios
                 turísticos ofrecidos, son responsables de leer y comprender las disposiciones contenidas en estos<br>
                 términos y condiciones. Si las disposiciones aquí señaladas no son claras o si no está de acuerdo
                 con alguna de ellas absténgase de adquirir los servicios publicados.
@@ -35,11 +35,11 @@
         <v-flex xs12  >
           <v-card dark tile flat color="transparent">
             <v-card-text>
-           <h3 class="letra1 text-sm-left"  >1. TÉRMINOS Y CONDICIONES DECAMERON ALL INCLUSIVE COLOMBIA.</h3>
+           <h3 class="letra1 text-sm-left black--text font-weight-bold"  >1. TÉRMINOS Y CONDICIONES DECAMERON ALL INCLUSIVE COLOMBIA.</h3>
             </v-card-text>
             <v-divider ></v-divider>
              <v-card-text>
-            <blockquote class="blockquote1 text-sm-left ">Bajo el presente acuerdo, los servicios de
+            <blockquote class="blockquote1 text-sm-left black--text">Bajo el presente acuerdo, los servicios de
                 procesamiento de pagos para bienes y/o servicios adquiridos en esta página web son
                 proporcionados por Estricontio S.L.<br> (Ronda Sant Pere, Numero 17, 2, Barcelona,
                 España.) en nombre de Servincluidos Ltda o por Servincluidos Ltda, según el tipo de
@@ -53,10 +53,10 @@
             </v-card-text>
              <v-divider ></v-divider>
               <v-card-text>
-           <h3 class="letra2 text-sm-left"  >1.1 DEFINICIONES:</h3>
+           <h3 class="letra2 text-sm-left black--text"  >1.1 DEFINICIONES:</h3>
             </v-card-text>
              <v-card-text>
-            <blockquote class="blockquote1 text-sm-left ">1. Hotel:Se entiende por establecimiento hotelero el conjunto de bienes destinados por la persona jurídica a prestar el servicio de alojamiento no permanente<br> inferior a 30 días, con o sin alimentación y servicios básicos y/o complementarios o accesorios de alojamiento, mediante contrato de hospedaje.<br>
+            <blockquote class="blockquote1 text-sm-left black--text">1. Hotel:Se entiende por establecimiento hotelero el conjunto de bienes destinados por la persona jurídica a prestar el servicio de alojamiento no permanente<br> inferior a 30 días, con o sin alimentación y servicios básicos y/o complementarios o accesorios de alojamiento, mediante contrato de hospedaje.<br>
                 2. Contrato de Hospedaje: Es un contrato de arrendamiento, de carácter comercial y de adhesión, que una empresa dedicada a esta actividad celebra con el<br> propósito principal de prestar alojamiento a otra persona denominada huésped, mediante el pago del precio respectivo, por un plazo inferior a 30 días.<br>
                 3. Concepto todo incluido y/o servicios especiales: Alojamiento. Todas las comidas, desayunos y almuerzos tipo bufet, cenas a la carta en restaurantes<br> especializados con previa reserva, snacks, bar abierto con bebidas y licores nacionales ilimitados. Algunos hoteles cuentan con servicio de bar las 24 horas <br>(consultar horarios). Show y/o música en vivo todas las noches, recreación dirigida para adultos y niño, toallas de piscina.<br>
                 4. PQR: Petición, queja o reclamo que un cliente presenta y que necesariamente debe ser documentada en el sistema a través de Sugar.<br>

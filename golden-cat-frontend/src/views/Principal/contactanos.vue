@@ -6,14 +6,14 @@
       </div>
     </div>
      <v-card flatcolor="red" >
-        <v-card dark tile flat color="black" >
+        <v-card dark tile flat color="#0770b8" >
       <v-card-text  class=" text-xs-center">
         <div class="  text-xs-center">
           <span class="letra4">CORREOS ELECTRONICOS</span>
         </div>
-        <span >HOTELGOLDENCAT@GMAIL.COM     <v-icon small>email</v-icon>
+        <span >HOTELESGOLDENCAT@GMAIL.COM     <v-icon small>email</v-icon>
         </span> <br>
-        <span >HOTELGOLDENCAT@HOTMAIL.COM     <v-icon small>email</v-icon>
+        <span >HOTELESGOLDENCAT@HOTMAIL.COM     <v-icon small>email</v-icon>
         </span>
       </v-card-text>
       <v-card-text class="text-xs-center">
@@ -33,11 +33,11 @@
         </div>
         <v-layout row>
           <v-flex xs4 >
-            <v-card dark tile flat color="#b88c0b" >
+            <v-card dark tile flat color="#012a52" >
             <v-container>
               <v-card>
                 <v-card>
-                  <v-card dark tile flat color="black" >
+                  <v-card dark tile flat color="#0770b8" >
                   <v-img class="tamañoimg" :src="limpiesa"></v-img>
                   <v-card-title primary-title>
                     <div>
@@ -48,7 +48,7 @@
                     </div>
                   </v-card-title>
                   <v-card-actions>
-                    <p>correo de contacto: <b>GoldenCat@gmail.com</b></p>
+                    <p>correo de contacto: <b>hotelesgoldencat@gmail.com</b></p>
                   </v-card-actions>
                 </v-card>
               </v-card>
@@ -57,11 +57,11 @@
             </v-card>
           </v-flex>
           <v-flex xs4>
-           <v-card dark tile flat color="#b88c0b" >
+           <v-card dark tile flat color="#012a52" >
             <v-container>
               <v-card>
                 <v-card>
-                <v-card dark tile flat color="black" >
+                <v-card dark tile flat color="#0770b8" >
                   <v-img class="tamañoimg" :src="recepcionista"></v-img>
                   <v-card-title primary-title>
                     <div>
@@ -73,7 +73,7 @@
                     </div>
                   </v-card-title>
                   <v-card-actions>
-                    <p>correo de contacto: <b>GoldenCat@gmail.com</b></p>
+                    <p>correo de contacto: <b>hotelesgoldencat@gmail.com</b></p>
                   </v-card-actions>
                 </v-card>
               </v-card>
@@ -82,11 +82,11 @@
              </v-card>
           </v-flex>
           <v-flex xs4>
-              <v-card dark tile flat color="#b88c0b" >
+              <v-card dark tile flat color="#012a52" >
             <v-container>
               <v-card >
                 <v-card>
-                 <v-card dark tile flat color="black" >
+                 <v-card dark tile flat color="#0770b8" >
                   <v-img class="tamañoimg" :src="mesero"></v-img>
                   <v-card-title primary-title>
                     <div>
@@ -98,7 +98,7 @@
                     </div>
                   </v-card-title>
                   <v-card-actions>
-                    <p>correo de contacto: <b>GoldenCat@gmail.com</b></p>
+                    <p>correo de contacto: <b>hotelesgoldencat@gmail.com</b></p>
                   </v-card-actions>
                 </v-card>
               </v-card>

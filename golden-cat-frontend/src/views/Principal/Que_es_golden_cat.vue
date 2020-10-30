@@ -90,7 +90,7 @@
             </v-layout>
             <v-layout row>
            <v-flex xs4 >
-           <v-container class="color1" >
+           <v-container class="red darken-1" >
            <v-card  tile flat color="transparent">
             <h3 class="letra text-md-center" >FRESCURA</h3>
             <P>Buscamos conocer las necesidades y expectativas
@@ -100,18 +100,17 @@
             </v-card>
              </v-container>
            </v-flex>
-           <v-flex xs4>
-          <v-container class="color2" >
-          <v-card tile flat color="transparent">
-            <h3 class="letra colorletra text-md-center" >CALIDEZ</h3>
-            <P class="colorletra">En nuestros destinos deseamos transmitir sensaciones únicas,
-              como cuando ves un hermoso atardecer y sientes esa paz y tranquilidad que necesita tu corazón.</P>
+           <v-flex xs4 >  
+          <v-container class="amber darken-1" >
+           <v-card tile flat color="transparent">
+            <h3 class="letra colorletra text-md-center white--text" >CALIDEZ</h3>
+            <P class="colorletra white--text">En nuestros destinos deseamos transmitir sensaciones únicas, como cuando ves un hermoso atardecer y sientes esa paz y tranquilidad que necesita tu corazón.</P>
             <video width="300px" height="170px" src="@/assets/videos/Nuestros valores (Cercanía).mp4" controls></video>
-          </v-card>
+           </v-card>
           </v-container>
-        </v-flex>
+           </v-flex>
         <v-flex xs4>
-          <v-container class="color3">
+          <v-container class="deep-purple accent-1">
           <v-card  tile flat color="transparent">
             <h3 class="letra text-md-center" >  GENEROSIDAD</h3>
             <P>Buscamos conocer las necesidades y expectativas
@@ -146,7 +145,7 @@
           </v-container>
         </v-flex>
          <v-flex xs4>
-           <v-container class="color6">
+           <v-container class="blue-grey lighten-2">
            <v-card tile flat color="transparent">
              <h3 class="letra text-md-center" >LIBERTAD</h3>
             <P>Aquí damos rienda suelta a tu imaginación haciendo realidad todo lo que
@@ -158,8 +157,8 @@
 
       </v-layout>
       <div class="darken-3 text-xs-center">
-   <h3 class="letra1 text-md-center" >Disfruta nuestro #TodoIncluido hasta la última gota porque tú</h3>
-   <h3 class="letra2 text-md-center" >lo mereces todo</h3>
+   <h3 class="letra1 text-md-center black--text" >Disfruta nuestro #TodoIncluido hasta la última gota porque tú</h3>
+   <h3 class="letra2 text-md-center black--text" >lo mereces todo</h3>
   </div>
     </v-card-text>
     </v-container>

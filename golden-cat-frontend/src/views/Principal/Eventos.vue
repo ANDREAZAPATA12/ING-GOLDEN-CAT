@@ -10,10 +10,12 @@
      <v-layout row>
       <v-flex xs12 >
         <v-card dark tile flat color="transparent" >
-          <h3 class="fueteEVENTOSYCELEBRACIONESENDEGOLDENCAT">EVENTOS Y CELEBRACIONES EN<br>GOLDENCAT</h3>
+          <h3 class="blockquote black--text display font-weight-bold fueteEVENTOSYCELEBRACIONESENDEGOLDENCAT">EVENTOS Y CELEBRACIONES EN GOLDENCAT</h3>
+          <h1 class="blockquote black--text display font-weight-bold ">
           <p>Golden cat ofrece sus planes bajo diferentes modalidades para eventos y convenciones corporativas.</p>
           <p>Nuestros Hoteles cuentan con habitaciones cómodamente dotadas y ofrecemos servicios adicionales de spa,
           restaurantes, bar abierto, piscina y más.</p>
+          </h1>
         </v-card>
       </v-flex>
     </v-layout>
@@ -23,7 +25,7 @@
           <v-card>
             <v-img :src="familia"></v-img>
              <template>
-             <v-card dark tile flat color="#b88c0b">
+             <v-card dark tile flat color="#053d75">
             <v-card-title  primary-title >
               <div>
                 <h3 class="letraEVENTOS" >GRUPOS FAMILIARES</h3>
@@ -42,7 +44,7 @@
                 <v-card-title class="headline " primary-title >GRUPOS FAMILIARES</v-card-title>
                 <v-card-text>Tenemos a tu disposición todos nuestros recursos para hacer que tu evento
                   sea algo único e inolvidable, al mejor estilo Golden cat con TODO INCLUIDO.
-                  <br> contactanos a : <b>GoldenCat@gmail.com </b>
+                  <br> contactanos a : <b>hotelesgoldencat@gmail.com </b>
                 </v-card-text>
                 <v-divider></v-divider>
                 <v-container>
@@ -62,7 +64,7 @@
           <v-card>
             <v-img :src="pareja"></v-img>
             <template>
-             <v-card dark tile flat color="#0bb5a4">
+             <v-card dark tile flat color="#2db1bd">
             <v-card-title primary-title>
               <div>
                 <h3 class="letraEVENTOS" >BODAS</h3>
@@ -79,7 +81,7 @@
                 <v-card-title class="headline " primary-title >BODAS</v-card-title>
                 <v-card-text>Disfruta el TODO INCLUIDO en Golden Cat
                   y haz que tu matrimonio sea inolvidable para ti y tus invitados.
-                  <br> contactanos a : <b>GoldenCat@gmail.com </b>
+                  <br> contactanos a : <b>hotelesgoldencat@gmail.com </b>
                 </v-card-text>
                 <v-divider></v-divider>
                 <v-container>
@@ -99,7 +101,7 @@
           <v-card>
             <v-img :src="conferencia"></v-img>
              <template>
-             <v-card dark tile flat color="#b88c0b">
+             <v-card dark tile flat color="#053d75">
             <v-card-title primary-title>
                 <div>
                 <h3 class="letraEVENTOS" >CONVENCIONES</h3>
@@ -120,7 +122,7 @@
                   * Equipamiento tecnológico de última generación<br>
                   * Montaje conceptual para fiestas, cocteles y eventos corporativos<br>
                   * Diseño de experiencias sensoriales<br>
-                  <br> contactanos a : <b>GoldenCat@gmail.com </b>
+                  <br> contactanos a : <b>hotelesgoldencat@gmail.com </b>
                 </v-card-text>
                 <v-divider></v-divider>
                 <v-container>

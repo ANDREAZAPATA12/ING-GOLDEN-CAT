@@ -15,7 +15,7 @@
           </v-flex>
           <v-btn color="transparent" to="Administrador/usuarios"> AD</v-btn>
           <v-flex xs12 sm6 md2>
-            <v-select :items="itemsnumeroadultos"  color="black" label="Numero de adultos"></v-select>
+            <v-select :items="itemsnumeroadultos"  color="white" label="Numero de adultos"></v-select>
           </v-flex>
           <v-flex xs12 sm6 md2>
               <v-select :items="itemsnumeroniños" color="white" label="Numero de niños"></v-select>
@@ -48,7 +48,7 @@
         <v-flex xs12 >
           <v-card dark tile flat color="#053d75" >
 
-              <h3 class="letra2 text-md-center blue--text  "  >La Mejor Opcion Para Ti y Tu familia</h3>
+              <h3 class="letra2 text-md-center blue--text"  >La Mejor Opcion Para Ti y Tu familia</h3>
              <v-container>
               <v-img class="gifpublicidad " :src="gifpublicidad"></v-img>
            </v-container>
@@ -63,7 +63,7 @@
          <div class="containercss" >
            <v-img height="166px" :src="HabitacionIndividual"></v-img>
             <div class="overlaycss">
-              <v-btn class=" textcss blockquote text-xs-center " color="transparent" to="Individual"> Individual</v-btn>
+              <v-btn class="textcss text-md-center text-capitalize #032d69--text "  color="transparent" to="Individual"> Individual</v-btn>
             
             </div>
           </div>
@@ -77,7 +77,7 @@
          <div class="containercss">
            <v-img height="166px" :src="HabitacionDoble"></v-img>
             <div class="overlaycss">
-            <v-btn class=" textcss blockquote text-xs-center " color="transparent" to="Doble"> Habitacion Doble</v-btn>
+            <v-btn class="textcss text-md-center text-capitalize #032d69--text " color="transparent" to="Doble">Doble</v-btn>
             </div>
           </div>
           </v-container>
@@ -89,7 +89,7 @@
          <div class="containercss">
            <v-img class="imagecss" :src="HabitacionMatrimoniales"></v-img>
             <div class="overlaycss">
-             <v-btn  class=" textcss blockquote text-xs-center " color="transparent" to="Matrimonial"> Habitacion Matrimonial</v-btn>
+             <v-btn  class="textcss text-md-center text-capitalize #032d69--text " color="transparent" to="Matrimonial"> Matrimonial</v-btn>
             </div>
           </div>
           </v-container>
@@ -101,7 +101,7 @@
          <div class="containercss">
            <v-img class="imagecss" :src="HabitacionSuite"></v-img>
             <div class="overlaycss">
-             <v-btn class=" textcss blockquote text-xs-center " color="transparent" to="Suite"> Suite</v-btn>
+             <v-btn class="textcss text-md-center text-capitalize #032d69--text " color="transparent" to="Suite"> Suite</v-btn>
             </div>
           </div>
           </v-container>
