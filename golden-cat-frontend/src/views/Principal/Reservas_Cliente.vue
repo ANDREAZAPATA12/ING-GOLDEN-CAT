@@ -553,8 +553,8 @@
                 </v-card>
               </v-flex>
 
-               <v-flex xs12 :key="n" mb-3>
-                <v-card color="#6e0a0a" class="white--text">
+              <v-flex xs12 :key="n" mb-3>
+                <v-card color="#1E88E5" class="white--text">
                   <v-layout row >
                     <v-flex xs4>
                       <v-card-title primary-title>
@@ -580,12 +580,12 @@
                     </v-flex>
                   </v-layout>
                   <v-divider light></v-divider>
-                  <v-expansion-panel>
-                        <v-expansion-panel-content >
+                  <v-expansion-panel class="blue darken-4">
+                        <v-expansion-panel-content class="blue darken-1" >
                           <template v-slot:header>
-                               <v-btn  color="#2d8abd" dark v-on="on" >Mas Detalles</v-btn>
+                               <v-btn  color="#0D47A1" dark v-on="on" >Mas Detalles</v-btn>
                           </template>
-                          <v-card dark tile flat color="#0d47a1" >
+                          <v-card dark tile flat color="#1E88E5" >
                             <v-card-text>
                               *Aire acondicionado <br>
                               *Baño con ducha, secador de pelo y servicio de *amenidades diarias<br>
@@ -606,7 +606,7 @@
 
 
                <v-flex xs12 :key="n" mb-3>
-                <v-card color="#6e0a0a" class="white--text">
+                <v-card color="#1E88E5" class="white--text">
                   <v-layout row >
                     <v-flex xs4>
                       <v-card-title primary-title>
@@ -632,12 +632,12 @@
                     </v-flex>
                   </v-layout>
                   <v-divider light></v-divider>
-                  <v-expansion-panel>
-                        <v-expansion-panel-content >
+                  <v-expansion-panel class="blue darken-4">
+                        <v-expansion-panel-content class="blue darken-1" >
                           <template v-slot:header>
-                               <v-btn  color="#2d8abd" dark v-on="on" >Mas Detalles</v-btn>
+                               <v-btn  color="#0D47A1" dark v-on="on" >Mas Detalles</v-btn>
                           </template>
-                         <v-card dark tile flat color="#0d47a1" >
+                          <v-card dark tile flat color="#1E88E5" >
                             <v-card-text>
                               *Aire acondicionado <br>
                               *Baño con ducha, secador de pelo y servicio de *amenidades diarias<br>
@@ -658,7 +658,7 @@
 
 
                <v-flex xs12 :key="n" mb-3>
-                <v-card color="#6e0a0a" class="white--text">
+                <v-card color="#1E88E5" class="white--text">
                   <v-layout row >
                     <v-flex xs4>
                       <v-card-title primary-title>
@@ -684,12 +684,63 @@
                     </v-flex>
                   </v-layout>
                   <v-divider light></v-divider>
-                  <v-expansion-panel>
-                        <v-expansion-panel-content >
+                  <v-expansion-panel class="blue darken-4">
+                        <v-expansion-panel-content class="blue darken-1" >
                           <template v-slot:header>
-                               <v-btn  color="#2d8abd" dark v-on="on" >Mas Detalles</v-btn>
+                               <v-btn  color="#0D47A1" dark v-on="on" >Mas Detalles</v-btn>
                           </template>
-                         <v-card dark tile flat color="#0d47a1" >
+                          <v-card dark tile flat color="#1E88E5" >
+                            <v-card-text>
+                              *Aire acondicionado <br>
+                              *Baño con ducha, secador de pelo y servicio de *amenidades diarias<br>
+                              *Caja de seguridad electrónica<br>
+                              * Voltaje (corriente): 220 V/60 Hz (los baños cuentan con tomas de 110 V para equipos hasta 50 W)<br>
+                              *Minibar con agua, refrescos, cervezas y más ($)<br>
+                              *Teléfono directo en dormitorio y baño<br>
+                              *1 cama extra o una cuna (a solicitud)<br>
+                              *2 Baños
+
+                            </v-card-text>
+                            </v-card>
+                        </v-expansion-panel-content>
+                      </v-expansion-panel>
+                </v-card>
+              </v-flex>
+
+
+              <v-flex xs12 :key="n" mb-3>
+                <v-card color="#1E88E5" class="white--text">
+                  <v-layout row >
+                    <v-flex xs4>
+                      <v-card-title primary-title>
+                        <div>
+                          <div class="headline mb-4">tipo de habitacion: doble</div>
+                          <div  class="mb-4">fecha de la reserva  : 25/05/2017 </div>
+                          <div  class=" mb-4">numero de adultos : 2</div>
+                          <div  class=" mb-4">tipo de habitacion: estandar</div>
+                        </div>
+                      </v-card-title>
+                    </v-flex>
+                    <v-flex xs4>
+                      <v-card-title primary-title>
+                        <div>
+                          <div class="headline mb-4">precio de la habitacion </div>
+                          <div  class="title mb-4 ">65666$ </div>
+                          <div>numero de niños: 0</div>
+                        </div>
+                      </v-card-title>
+                    </v-flex>
+                    <v-flex xs4>
+                      <v-img :src="habitacion2" contain></v-img>
+                    </v-flex>
+                  </v-layout>
+                  <v-divider light></v-divider>
+                  <v-expansion-panel class="blue darken-4">
+                        <v-expansion-panel-content class="blue darken-1" >
+                          <template v-slot:header>
+                               <v-btn  color="#0D47A1" dark v-on="on" >Mas Detalles</v-btn>
+                          </template>
+                          <v-card dark tile flat color="#1E88E5" >
                             <v-card-text>
                               *Aire acondicionado <br>
                               *Baño con ducha, secador de pelo y servicio de *amenidades diarias<br>
@@ -709,7 +760,7 @@
 
 
                <v-flex xs12 :key="n" mb-3>
-                <v-card color="#6e0a0a" class="white--text">
+                <v-card color="#1E88E5" class="white--text">
                   <v-layout row >
                     <v-flex xs4>
                       <v-card-title primary-title>
@@ -735,12 +786,12 @@
                     </v-flex>
                   </v-layout>
                   <v-divider light></v-divider>
-                  <v-expansion-panel>
-                        <v-expansion-panel-content >
+                  <v-expansion-panel class="blue darken-4">
+                        <v-expansion-panel-content class="blue darken-1" >
                           <template v-slot:header>
-                               <v-btn  color="#2d8abd" dark v-on="on" >Mas Detalles</v-btn>
+                               <v-btn  color="#0D47A1" dark v-on="on" >Mas Detalles</v-btn>
                           </template>
-                        <v-card dark tile flat color="#0d47a1" >
+                          <v-card dark tile flat color="#1E88E5" >
                             <v-card-text>
                               *Aire acondicionado <br>
                               *Baño con ducha, secador de pelo y servicio de *amenidades diarias<br>
@@ -760,7 +811,7 @@
 
 
                <v-flex xs12 :key="n" mb-3>
-                <v-card color="#6e0a0a" class="white--text">
+                <v-card color="#1E88E5" class="white--text">
                   <v-layout row >
                     <v-flex xs4>
                       <v-card-title primary-title>
@@ -786,12 +837,12 @@
                     </v-flex>
                   </v-layout>
                   <v-divider light></v-divider>
-                  <v-expansion-panel>
-                        <v-expansion-panel-content >
+                  <v-expansion-panel class="blue darken-4">
+                        <v-expansion-panel-content class="blue darken-1" >
                           <template v-slot:header>
-                               <v-btn  color="#2d8abd" dark v-on="on" >Mas Detalles</v-btn>
+                               <v-btn  color="#0D47A1" dark v-on="on" >Mas Detalles</v-btn>
                           </template>
-                         <v-card dark tile flat color="#0d47a1" >
+                          <v-card dark tile flat color="#1E88E5" >
                             <v-card-text>
                               *Aire acondicionado <br>
                               *Baño con ducha, secador de pelo y servicio de *amenidades diarias<br>
@@ -810,8 +861,8 @@
               </v-flex>
 
 
-               <v-flex xs12 :key="n" mb-3>
-                <v-card color="#6e0a0a" class="white--text">
+              <v-flex xs12 :key="n" mb-3>
+                <v-card color="#1E88E5" class="white--text">
                   <v-layout row >
                     <v-flex xs4>
                       <v-card-title primary-title>
@@ -837,63 +888,12 @@
                     </v-flex>
                   </v-layout>
                   <v-divider light></v-divider>
-                  <v-expansion-panel>
-                        <v-expansion-panel-content >
+                  <v-expansion-panel class="blue darken-4">
+                        <v-expansion-panel-content class="blue darken-1" >
                           <template v-slot:header>
-                               <v-btn  color="#2d8abd" dark v-on="on" >Mas Detalles</v-btn>
+                               <v-btn  color="#0D47A1" dark v-on="on" >Mas Detalles</v-btn>
                           </template>
-                         <v-card dark tile flat color="#0d47a1" >
-                            <v-card-text>
-                              *Aire acondicionado <br>
-                              *Baño con ducha, secador de pelo y servicio de *amenidades diarias<br>
-                              *Caja de seguridad electrónica<br>
-                              * Voltaje (corriente): 220 V/60 Hz (los baños cuentan con tomas de 110 V para equipos hasta 50 W)<br>
-                              *Minibar con agua, refrescos, cervezas y más ($)<br>
-                              *Teléfono directo en dormitorio y baño<br>
-                              *1 cama extra o una cuna (a solicitud)<br>
-                              *2 Baños
-
-                            </v-card-text>
-                            </v-card>
-                        </v-expansion-panel-content>
-                      </v-expansion-panel>
-                </v-card>
-              </v-flex>
-
-
-               <v-flex xs12 :key="n" mb-3>
-                <v-card color="#6e0a0a" class="white--text">
-                  <v-layout row >
-                    <v-flex xs4>
-                      <v-card-title primary-title>
-                        <div>
-                          <div class="headline mb-4">tipo de habitacion: doble</div>
-                          <div  class="mb-4">fecha de la reserva  : 25/05/2017 </div>
-                          <div  class=" mb-4">numero de adultos : 2</div>
-                          <div  class=" mb-4">tipo de habitacion: estandar</div>
-                        </div>
-                      </v-card-title>
-                    </v-flex>
-                    <v-flex xs4>
-                      <v-card-title primary-title>
-                        <div>
-                          <div class="headline mb-4">precio de la habitacion </div>
-                          <div  class="title mb-4 ">65666$ </div>
-                          <div>numero de niños: 0</div>
-                        </div>
-                      </v-card-title>
-                    </v-flex>
-                    <v-flex xs4>
-                      <v-img :src="habitacion2" contain></v-img>
-                    </v-flex>
-                  </v-layout>
-                  <v-divider light></v-divider>
-                  <v-expansion-panel>
-                        <v-expansion-panel-content >
-                          <template v-slot:header>
-                               <v-btn  color="#2d8abd" dark v-on="on" >Mas Detalles</v-btn>
-                          </template>
-                          <v-card dark tile flat color="#0d47a1" >
+                          <v-card dark tile flat color="#1E88E5" >
                             <v-card-text>
                               *Aire acondicionado <br>
                               *Baño con ducha, secador de pelo y servicio de *amenidades diarias<br>

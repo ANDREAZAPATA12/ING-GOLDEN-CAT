@@ -5,7 +5,7 @@
       <v-icon dark>check_circle</v-icon>
     </v-snackbar>
     <v-form ref="form" @submit.prevent="submit">
-      <v-container class="este" grid-list-xl fluid color="white">
+      <v-container class="este" grid-list-xl fluid color="yellow">
         <v-layout wrap>
           <v-flex xs12 sm6>
             <v-text-field v-model="form.nombre" color="purple darken-2" label="Nombres" required></v-text-field>

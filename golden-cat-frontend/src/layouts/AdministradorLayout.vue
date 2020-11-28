@@ -2,7 +2,7 @@
   <div id="app">
     <v-app id="inspire">
       <v-navigation-drawer fixed
-        :clipped="$vuetify.breakpoint.mdAndUp" app v-model="drawer" width="250" class="green lighten-4">
+        :clipped="$vuetify.breakpoint.mdAndUp" app v-model="drawer" width="250" class="blue lighten-5">
         <link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet">
         <v-list dense style="color: black;">
           <template v-for="item in items">

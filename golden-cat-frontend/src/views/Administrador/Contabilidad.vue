@@ -71,7 +71,7 @@ export default {
 
 <style  scoped>
   .Layout{
-    background-color: white;
+    background-color: cd;
     padding-top: 20px;
     padding-left: 30px;
   }

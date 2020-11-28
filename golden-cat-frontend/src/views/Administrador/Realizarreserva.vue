@@ -50,7 +50,7 @@
       <v-btn color="success">Buscar</v-btn>
         </v-toolbar>
     <v-flex xs12>
-      <div class="rojo">
+      <div class="red">
         <v-tabs color="blue darken-1">
           <v-tab ripple>Reservas activas</v-tab>
           <v-tab-item>
